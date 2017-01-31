@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668631E40CBB100CD66CA /* AppDelegate.swift */; };
+		5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668651E40CBB100CD66CA /* ViewController.swift */; };
+		5F9668691E40CBB100CD66CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9668671E40CBB100CD66CA /* Main.storyboard */; };
+		5F96686C1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F96686A1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld */; };
+		5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686D1E40CBB100CD66CA /* Assets.xcassets */; };
+		5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */; };
+		5F96687C1E40CBB100CD66CA /* LazyDoctorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */; };
+		5F9668871E40CBB100CD66CA /* LazyDoctorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668861E40CBB100CD66CA /* LazyDoctorUITests.swift */; };
+		5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */; };
+		5F9668971E40DAC300CD66CA /* SystemsOfTheBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F9668781E40CBB100CD66CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F9668581E40CBB100CD66CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F96685F1E40CBB100CD66CA;
+			remoteInfo = LazyDoctor;
+		};
+		5F9668831E40CBB100CD66CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F9668581E40CBB100CD66CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F96685F1E40CBB100CD66CA;
+			remoteInfo = LazyDoctor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F9668601E40CBB100CD66CA /* LazyDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F9668651E40CBB100CD66CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F9668681E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F96686B1E40CBB100CD66CA /* LazyDoctor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LazyDoctor.xcdatamodel; sourceTree = "<group>"; };
+		5F96686D1E40CBB100CD66CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F9668701E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F9668721E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9668771E40CBB100CD66CA /* LazyDoctorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyDoctorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDoctorTests.swift; sourceTree = "<group>"; };
+		5F96687D1E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9668821E40CBB100CD66CA /* LazyDoctorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyDoctorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9668861E40CBB100CD66CA /* LazyDoctorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDoctorUITests.swift; sourceTree = "<group>"; };
+		5F9668881E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyViewController.swift; sourceTree = "<group>"; };
+		5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F96685D1E40CBB100CD66CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9668741E40CBB100CD66CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F96687F1E40CBB100CD66CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F9668571E40CBB100CD66CA = {
+			isa = PBXGroup;
+			children = (
+				5F9668621E40CBB100CD66CA /* LazyDoctor */,
+				5F96687A1E40CBB100CD66CA /* LazyDoctorTests */,
+				5F9668851E40CBB100CD66CA /* LazyDoctorUITests */,
+				5F9668611E40CBB100CD66CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F9668611E40CBB100CD66CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F9668601E40CBB100CD66CA /* LazyDoctor.app */,
+				5F9668771E40CBB100CD66CA /* LazyDoctorTests.xctest */,
+				5F9668821E40CBB100CD66CA /* LazyDoctorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F9668621E40CBB100CD66CA /* LazyDoctor */ = {
+			isa = PBXGroup;
+			children = (
+				5F9668631E40CBB100CD66CA /* AppDelegate.swift */,
+				5F9668651E40CBB100CD66CA /* ViewController.swift */,
+				5F9668671E40CBB100CD66CA /* Main.storyboard */,
+				5F96686D1E40CBB100CD66CA /* Assets.xcassets */,
+				5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */,
+				5F9668721E40CBB100CD66CA /* Info.plist */,
+				5F96686A1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld */,
+				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
+			);
+			path = LazyDoctor;
+			sourceTree = "<group>";
+		};
+		5F96687A1E40CBB100CD66CA /* LazyDoctorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */,
+				5F96687D1E40CBB100CD66CA /* Info.plist */,
+				5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */,
+			);
+			path = LazyDoctorTests;
+			sourceTree = "<group>";
+		};
+		5F9668851E40CBB100CD66CA /* LazyDoctorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F9668861E40CBB100CD66CA /* LazyDoctorUITests.swift */,
+				5F9668881E40CBB100CD66CA /* Info.plist */,
+			);
+			path = LazyDoctorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F96685F1E40CBB100CD66CA /* LazyDoctor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F96688B1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctor" */;
+			buildPhases = (
+				5F96685C1E40CBB100CD66CA /* Sources */,
+				5F96685D1E40CBB100CD66CA /* Frameworks */,
+				5F96685E1E40CBB100CD66CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LazyDoctor;
+			productName = LazyDoctor;
+			productReference = 5F9668601E40CBB100CD66CA /* LazyDoctor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F9668761E40CBB100CD66CA /* LazyDoctorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F96688E1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorTests" */;
+			buildPhases = (
+				5F9668731E40CBB100CD66CA /* Sources */,
+				5F9668741E40CBB100CD66CA /* Frameworks */,
+				5F9668751E40CBB100CD66CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F9668791E40CBB100CD66CA /* PBXTargetDependency */,
+			);
+			name = LazyDoctorTests;
+			productName = LazyDoctorTests;
+			productReference = 5F9668771E40CBB100CD66CA /* LazyDoctorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F9668811E40CBB100CD66CA /* LazyDoctorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9668911E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorUITests" */;
+			buildPhases = (
+				5F96687E1E40CBB100CD66CA /* Sources */,
+				5F96687F1E40CBB100CD66CA /* Frameworks */,
+				5F9668801E40CBB100CD66CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F9668841E40CBB100CD66CA /* PBXTargetDependency */,
+			);
+			name = LazyDoctorUITests;
+			productName = LazyDoctorUITests;
+			productReference = 5F9668821E40CBB100CD66CA /* LazyDoctorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F9668581E40CBB100CD66CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Elizabeth Atkin, Dan Pelensky, Veronica Sonzini";
+				TargetAttributes = {
+					5F96685F1E40CBB100CD66CA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					5F9668761E40CBB100CD66CA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F96685F1E40CBB100CD66CA;
+					};
+					5F9668811E40CBB100CD66CA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F96685F1E40CBB100CD66CA;
+					};
+				};
+			};
+			buildConfigurationList = 5F96685B1E40CBB100CD66CA /* Build configuration list for PBXProject "LazyDoctor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F9668571E40CBB100CD66CA;
+			productRefGroup = 5F9668611E40CBB100CD66CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F96685F1E40CBB100CD66CA /* LazyDoctor */,
+				5F9668761E40CBB100CD66CA /* LazyDoctorTests */,
+				5F9668811E40CBB100CD66CA /* LazyDoctorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F96685E1E40CBB100CD66CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */,
+				5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */,
+				5F9668691E40CBB100CD66CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9668751E40CBB100CD66CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9668801E40CBB100CD66CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F96685C1E40CBB100CD66CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */,
+				5F96686C1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld in Sources */,
+				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
+				5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9668731E40CBB100CD66CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F96687C1E40CBB100CD66CA /* LazyDoctorTests.swift in Sources */,
+				5F9668971E40DAC300CD66CA /* SystemsOfTheBodyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F96687E1E40CBB100CD66CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9668871E40CBB100CD66CA /* LazyDoctorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F9668791E40CBB100CD66CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F96685F1E40CBB100CD66CA /* LazyDoctor */;
+			targetProxy = 5F9668781E40CBB100CD66CA /* PBXContainerItemProxy */;
+		};
+		5F9668841E40CBB100CD66CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F96685F1E40CBB100CD66CA /* LazyDoctor */;
+			targetProxy = 5F9668831E40CBB100CD66CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F9668671E40CBB100CD66CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F9668681E40CBB100CD66CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F9668701E40CBB100CD66CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F9668891E40CBB100CD66CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F96688A1E40CBB100CD66CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F96688C1E40CBB100CD66CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LazyDoctor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5F96688D1E40CBB100CD66CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LazyDoctor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5F96688F1E40CBB100CD66CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LazyDoctorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyDoctor.app/LazyDoctor";
+			};
+			name = Debug;
+		};
+		5F9668901E40CBB100CD66CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LazyDoctorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyDoctor.app/LazyDoctor";
+			};
+			name = Release;
+		};
+		5F9668921E40CBB100CD66CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LazyDoctorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LazyDoctor;
+			};
+			name = Debug;
+		};
+		5F9668931E40CBB100CD66CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LazyDoctorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LazyDoctor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F96685B1E40CBB100CD66CA /* Build configuration list for PBXProject "LazyDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9668891E40CBB100CD66CA /* Debug */,
+				5F96688A1E40CBB100CD66CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F96688B1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F96688C1E40CBB100CD66CA /* Debug */,
+				5F96688D1E40CBB100CD66CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F96688E1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F96688F1E40CBB100CD66CA /* Debug */,
+				5F9668901E40CBB100CD66CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F9668911E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9668921E40CBB100CD66CA /* Debug */,
+				5F9668931E40CBB100CD66CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F96686A1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F96686B1E40CBB100CD66CA /* LazyDoctor.xcdatamodel */,
+			);
+			currentVersion = 5F96686B1E40CBB100CD66CA /* LazyDoctor.xcdatamodel */;
+			path = LazyDoctor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F9668581E40CBB100CD66CA /* Project object */;
+}
