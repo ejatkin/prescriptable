@@ -1,4 +1,4 @@
-# Final Project
+# Final Project - 'Lazy Doctor'
 ## Elizabeth, Veronica, Dan
 
 
@@ -6,13 +6,6 @@
 - TDD in Swift
 - Using XCode
 - OOD in Swift
-
-## To Do
-- Set up in Github (Elizabeth)
-- Add us as collaborators (Elizabeth)
-- Set up waffle
--
-
 
 #### MVP 1 Goal:
 - Thursday morning

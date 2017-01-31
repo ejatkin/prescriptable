@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */; };
+		37B067421E40DF490056BE6B /* SystemsOfTheBodyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */; };
 		5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668631E40CBB100CD66CA /* AppDelegate.swift */; };
 		5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668651E40CBB100CD66CA /* ViewController.swift */; };
 		5F9668691E40CBB100CD66CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9668671E40CBB100CD66CA /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBody.swift; sourceTree = "<group>"; };
+		37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTest.swift; sourceTree = "<group>"; };
 		5F9668601E40CBB100CD66CA /* LazyDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9668651E40CBB100CD66CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				5F9668721E40CBB100CD66CA /* Info.plist */,
 				5F96686A1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld */,
 				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
+				37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */,
 			);
 			path = LazyDoctor;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */,
 				5F96687D1E40CBB100CD66CA /* Info.plist */,
 				5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */,
+				37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */,
 			);
 			path = LazyDoctorTests;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */,
 				5F96686C1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld in Sources */,
 				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
+				37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */,
 				5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F96687C1E40CBB100CD66CA /* LazyDoctorTests.swift in Sources */,
+				37B067421E40DF490056BE6B /* SystemsOfTheBodyTest.swift in Sources */,
 				5F9668971E40DAC300CD66CA /* SystemsOfTheBodyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +525,7 @@
 				5F96688D1E40CBB100CD66CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F96688E1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +534,7 @@
 				5F9668901E40CBB100CD66CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F9668911E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +543,7 @@
 				5F9668931E40CBB100CD66CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
