@@ -17,6 +17,9 @@
 		51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE379D1E4206E800EA9902 /* SeverityViewController.swift */; };
 		51CE37A01E42075900EA9902 /* Severity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE379F1E42075900EA9902 /* Severity.swift */; };
 		51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */; };
+		51DCA6EE1E424AA500463EF9 /* PregnantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */; };
+		51DCA6F01E424AB900463EF9 /* PregnantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */; };
+		51DCA6F21E424BF700463EF9 /* Pregnant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6F11E424BF700463EF9 /* Pregnant.swift */; };
 		5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668631E40CBB100CD66CA /* AppDelegate.swift */; };
 		5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668651E40CBB100CD66CA /* ViewController.swift */; };
 		5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686D1E40CBB100CD66CA /* Assets.xcassets */; };
@@ -59,6 +62,9 @@
 		51CE379D1E4206E800EA9902 /* SeverityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityViewController.swift; sourceTree = "<group>"; };
 		51CE379F1E42075900EA9902 /* Severity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Severity.swift; sourceTree = "<group>"; };
 		51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityTableViewCell.swift; sourceTree = "<group>"; };
+		51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PregnantTableViewCell.swift; sourceTree = "<group>"; };
+		51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PregnantViewController.swift; sourceTree = "<group>"; };
+		51DCA6F11E424BF700463EF9 /* Pregnant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregnant.swift; sourceTree = "<group>"; };
 		5F9668601E40CBB100CD66CA /* LazyDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9668651E40CBB100CD66CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				51CE379F1E42075900EA9902 /* Severity.swift */,
 				37CAE6D21E42327800DA4E33 /* Weight.swift */,
 				5FC50C9E1E4241A000358724 /* ChildOrAdult.swift */,
+				51DCA6F11E424BF700463EF9 /* Pregnant.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -154,6 +161,8 @@
 				37CAE6D01E42312700DA4E33 /* WeightTableViewCell.swift */,
 				5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */,
 				5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */,
+				51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */,
+				51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */,
 			);
 			path = LazyDoctor;
 			sourceTree = "<group>";
@@ -314,12 +323,15 @@
 			files = (
 				37CAE6D11E42312700DA4E33 /* WeightTableViewCell.swift in Sources */,
 				5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */,
+				51DCA6F01E424AB900463EF9 /* PregnantViewController.swift in Sources */,
 				51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */,
 				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
 				5FC50C9B1E42415000358724 /* ChildOrAdultViewController.swift in Sources */,
+				51DCA6F21E424BF700463EF9 /* Pregnant.swift in Sources */,
 				5FC50C9F1E4241A000358724 /* ChildOrAdult.swift in Sources */,
 				51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */,
 				37CAE6CF1E4230AE00DA4E33 /* WeightViewController.swift in Sources */,
+				51DCA6EE1E424AA500463EF9 /* PregnantTableViewCell.swift in Sources */,
 				37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */,
 				51CE37A01E42075900EA9902 /* Severity.swift in Sources */,
 				51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */,
