@@ -50,14 +50,14 @@ class WeightViewController: UIViewController, UITableViewDataSource, UITableView
         let currentCell = tableView.cellForRow(at: indexPath!) as? WeightTableViewCell
         
         valueToPass = currentCell?.weightLabel?.text
-        performSegue(withIdentifier: "showWeight", sender: self)
+        performSegue(withIdentifier: "ShowChildOrAdultSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showWeight") {
-            let weightViewController = segue.destination as! WeightViewController
+        if (segue.identifier == "ShowChildOrAdultSegue") {
+            let childOrAdultViewController = segue.destination as! ChildOrAdultViewController
             
-            weightViewController.passedValue = valueToPass
+            childOrAdultViewController.passedValue = valueToPass
         }
     }
     

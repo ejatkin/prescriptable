@@ -26,6 +26,9 @@
 		5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */; };
 		5F9668971E40DAC300CD66CA /* SystemsOfTheBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */; };
 		5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C981E42004600358724 /* ClinicalCondition.swift */; };
+		5FC50C9B1E42415000358724 /* ChildOrAdultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */; };
+		5FC50C9D1E42417A00358724 /* ChildOrAdultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */; };
+		5FC50C9F1E4241A000358724 /* ChildOrAdult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C9E1E4241A000358724 /* ChildOrAdult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyViewController.swift; sourceTree = "<group>"; };
 		5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTests.swift; sourceTree = "<group>"; };
 		5FC50C981E42004600358724 /* ClinicalCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicalCondition.swift; sourceTree = "<group>"; };
+		5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildOrAdultViewController.swift; sourceTree = "<group>"; };
+		5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildOrAdultTableViewCell.swift; sourceTree = "<group>"; };
+		5FC50C9E1E4241A000358724 /* ChildOrAdult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildOrAdult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				5FC50C981E42004600358724 /* ClinicalCondition.swift */,
 				51CE379F1E42075900EA9902 /* Severity.swift */,
 				37CAE6D21E42327800DA4E33 /* Weight.swift */,
+				5FC50C9E1E4241A000358724 /* ChildOrAdult.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -145,6 +152,8 @@
 				51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */,
 				37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */,
 				37CAE6D01E42312700DA4E33 /* WeightTableViewCell.swift */,
+				5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */,
+				5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */,
 			);
 			path = LazyDoctor;
 			sourceTree = "<group>";
@@ -307,6 +316,8 @@
 				5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */,
 				51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */,
 				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
+				5FC50C9B1E42415000358724 /* ChildOrAdultViewController.swift in Sources */,
+				5FC50C9F1E4241A000358724 /* ChildOrAdult.swift in Sources */,
 				51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */,
 				37CAE6CF1E4230AE00DA4E33 /* WeightViewController.swift in Sources */,
 				37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */,
@@ -314,6 +325,7 @@
 				51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */,
 				5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */,
 				5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */,
+				5FC50C9D1E42417A00358724 /* ChildOrAdultTableViewCell.swift in Sources */,
 				37CAE6D31E42327800DA4E33 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
