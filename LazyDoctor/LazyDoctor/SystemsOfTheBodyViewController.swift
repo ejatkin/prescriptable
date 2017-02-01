@@ -11,6 +11,10 @@ import UIKit
 class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     let bodySystems = SystemsOfTheBody().bodySystems
+    
+    let clinicalCondition = ClinicalCondition()
+    
+    var valueToPass: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,10 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+//    
+//    func updateClinicalConditionWithSelectedItem() {
+//        clinicalCondition.system =
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SystemOfTheBodyCell") as? SystemOfTheBodyTableViewCell
@@ -31,6 +39,22 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bodySystems.count
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow
+        let currentCell = tableView.cellForRow(at: indexPath!) as? SystemOfTheBodyTableViewCell
+        
+        valueToPass = currentCell?.systemOfTheBodyTitleLabel?.text
+        performSegue(withIdentifier: "showSeverity", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showSeverity") {
+            let severityViewController = segue.destination as! SeverityViewController
+            
+            severityViewController.passedValue = valueToPass
+        }
     }
 
 }

@@ -11,11 +11,11 @@ import UIKit
 class ClinicalCondition: NSObject {
     
     
-        let system: String = ""
-        let severity: String = ""
-        let weight: Int = 0
-        let isChild: Bool = false
-        let isPregnant: Bool = false
-        let isPenicillin: Bool = false
+        var system: String = ""
+        var severity: String = ""
+        var weight: Int = 0
+        var isChild: Bool = false
+        var isPregnant: Bool = false
+        var isPenicillin: Bool = false
 
 }
