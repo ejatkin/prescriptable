@@ -13,13 +13,13 @@
 		5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668631E40CBB100CD66CA /* AppDelegate.swift */; };
 		5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668651E40CBB100CD66CA /* ViewController.swift */; };
 		5F9668691E40CBB100CD66CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9668671E40CBB100CD66CA /* Main.storyboard */; };
-		5F96686C1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F96686A1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld */; };
 		5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686D1E40CBB100CD66CA /* Assets.xcassets */; };
 		5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */; };
 		5F96687C1E40CBB100CD66CA /* LazyDoctorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */; };
 		5F9668871E40CBB100CD66CA /* LazyDoctorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668861E40CBB100CD66CA /* LazyDoctorUITests.swift */; };
 		5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */; };
 		5F9668971E40DAC300CD66CA /* SystemsOfTheBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */; };
+		5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C981E42004600358724 /* ClinicalCondition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9668651E40CBB100CD66CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F9668681E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5F96686B1E40CBB100CD66CA /* LazyDoctor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LazyDoctor.xcdatamodel; sourceTree = "<group>"; };
 		5F96686D1E40CBB100CD66CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F9668701E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F9668721E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		5F9668881E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyViewController.swift; sourceTree = "<group>"; };
 		5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTests.swift; sourceTree = "<group>"; };
+		5FC50C981E42004600358724 /* ClinicalCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicalCondition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */,
+				5FC50C981E42004600358724 /* ClinicalCondition.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -123,7 +124,6 @@
 				5F96686D1E40CBB100CD66CA /* Assets.xcassets */,
 				5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */,
 				5F9668721E40CBB100CD66CA /* Info.plist */,
-				5F96686A1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld */,
 				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
 				51CE37981E40EB6F00EA9902 /* Models */,
 				51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */,
@@ -287,9 +287,9 @@
 			files = (
 				5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */,
 				51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */,
-				5F96686C1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld in Sources */,
 				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
 				37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */,
+				5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */,
 				5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,19 +558,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5F96686A1E40CBB100CD66CA /* LazyDoctor.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5F96686B1E40CBB100CD66CA /* LazyDoctor.xcdatamodel */,
-			);
-			currentVersion = 5F96686B1E40CBB100CD66CA /* LazyDoctor.xcdatamodel */;
-			path = LazyDoctor.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5F9668581E40CBB100CD66CA /* Project object */;
 }
