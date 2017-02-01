@@ -15,19 +15,18 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     let clinicalCondition = ClinicalCondition()
     
     var valueToPass: String!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-//    
-//    func updateClinicalConditionWithSelectedItem() {
-//        clinicalCondition.system =
-//    }
+    //
+    //    func updateClinicalConditionWithSelectedItem() {
+    //        clinicalCondition.system =
+    //    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SystemOfTheBodyCell") as? SystemOfTheBodyTableViewCell
@@ -41,7 +40,7 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
         return bodySystems.count
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         let currentCell = tableView.cellForRow(at: indexPath!) as? SystemOfTheBodyTableViewCell
         
@@ -49,12 +48,12 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
         performSegue(withIdentifier: "showSeverity", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showSeverity") {
-            let severityViewController = segue.destination as! SeverityViewController
-            
-            severityViewController.passedValue = valueToPass
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if (segue.identifier == "showSeverity") {
+                let severityViewController = segue.destination as! SeverityViewController
+    
+                severityViewController.passedValue = valueToPass
+            }
         }
-    }
-
+    
 }

@@ -13,7 +13,7 @@ class ClinicalCondition: NSObject {
     
         var system: String = ""
         var severity: String = ""
-        var weight: Int = 0
+        var weight: String = ""
         var isChild: Bool = false
         var isPregnant: Bool = false
         var isPenicillin: Bool = false
