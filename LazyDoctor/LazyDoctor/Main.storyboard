@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r78-aC-YvY">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r78-aC-YvY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -155,7 +155,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ojn-yu-5no" id="mNs-uA-R4F">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyV-bH-rbt">
@@ -189,10 +189,72 @@
                             <constraint firstAttribute="trailingMargin" secondItem="sJW-c7-2Br" secondAttribute="trailing" id="uaN-Kr-KgQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="rDQ-ui-vEd" kind="show" identifier="ShowChildOrAdultSegue" id="PKm-ua-llp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4m-Y9-cFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2503" y="36"/>
+        </scene>
+        <!--Child Or Adult View Controller-->
+        <scene sceneID="fss-29-lml">
+            <objects>
+                <viewController id="rDQ-ui-vEd" customClass="ChildOrAdultViewController" customModule="LazyDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I03-rc-Vqw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qzf-ZQ-9FZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ku0-eg-R0G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5n-8p-xil">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChildOrAdultCell" id="ivh-pH-4Ce" customClass="ChildOrAdultTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ivh-pH-4Ce" id="7zj-ax-bnh">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAq-xE-4rm">
+                                                    <rect key="frame" x="150" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vAq-xE-4rm" firstAttribute="centerX" secondItem="7zj-ax-bnh" secondAttribute="centerX" id="4Q2-jZ-KVj"/>
+                                                <constraint firstItem="vAq-xE-4rm" firstAttribute="centerY" secondItem="7zj-ax-bnh" secondAttribute="centerY" id="dZa-NR-b1O"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="childoradultLabel" destination="vAq-xE-4rm" id="qUz-EW-P22"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rDQ-ui-vEd" id="iFe-1f-8pT"/>
+                                    <outlet property="delegate" destination="rDQ-ui-vEd" id="RcU-gz-OB1"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d5n-8p-xil" firstAttribute="top" secondItem="I03-rc-Vqw" secondAttribute="bottom" id="LpF-sD-cGl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5n-8p-xil" secondAttribute="trailing" id="Y1E-pH-QHw"/>
+                            <constraint firstItem="Qzf-ZQ-9FZ" firstAttribute="top" secondItem="d5n-8p-xil" secondAttribute="bottom" id="Yc3-CO-R9z"/>
+                            <constraint firstItem="d5n-8p-xil" firstAttribute="leading" secondItem="ku0-eg-R0G" secondAttribute="leadingMargin" id="vv2-mf-ya4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEZ-Ev-gnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3379" y="33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GtP-1g-WYn">
