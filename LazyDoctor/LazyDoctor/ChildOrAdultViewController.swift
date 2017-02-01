@@ -34,4 +34,21 @@ class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITab
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow
+        let currentCell = tableView.cellForRow(at: indexPath!) as? ChildOrAdultTableViewCell
+        
+        valueToPass = currentCell?.childoradultLabel?.text
+        performSegue(withIdentifier: "showPregnantSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showPregnantSegue") {
+            
+            let pregnantViewController = segue.destination as! PregnantViewController
+            pregnantViewController.passedValue = valueToPass
+        }
+    }
+    
+    
 }
