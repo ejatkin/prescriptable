@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */; };
 		37B067421E40DF490056BE6B /* SystemsOfTheBodyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */; };
+		37CAE6CD1E422EDE00DA4E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CAE6CC1E422EDE00DA4E33 /* Main.storyboard */; };
+		37CAE6CF1E4230AE00DA4E33 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */; };
+		37CAE6D11E42312700DA4E33 /* WeightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D01E42312700DA4E33 /* WeightTableViewCell.swift */; };
+		37CAE6D31E42327800DA4E33 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D21E42327800DA4E33 /* Weight.swift */; };
 		51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */; };
+		51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE379D1E4206E800EA9902 /* SeverityViewController.swift */; };
+		51CE37A01E42075900EA9902 /* Severity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE379F1E42075900EA9902 /* Severity.swift */; };
+		51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */; };
 		5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668631E40CBB100CD66CA /* AppDelegate.swift */; };
 		5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668651E40CBB100CD66CA /* ViewController.swift */; };
-		5F9668691E40CBB100CD66CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9668671E40CBB100CD66CA /* Main.storyboard */; };
 		5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686D1E40CBB100CD66CA /* Assets.xcassets */; };
 		5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */; };
 		5F96687C1E40CBB100CD66CA /* LazyDoctorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */; };
@@ -42,11 +48,17 @@
 /* Begin PBXFileReference section */
 		37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBody.swift; sourceTree = "<group>"; };
 		37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTest.swift; sourceTree = "<group>"; };
+		37CAE6CC1E422EDE00DA4E33 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		37CAE6D01E42312700DA4E33 /* WeightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTableViewCell.swift; sourceTree = "<group>"; };
+		37CAE6D21E42327800DA4E33 /* Weight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemOfTheBodyTableViewCell.swift; sourceTree = "<group>"; };
+		51CE379D1E4206E800EA9902 /* SeverityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityViewController.swift; sourceTree = "<group>"; };
+		51CE379F1E42075900EA9902 /* Severity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Severity.swift; sourceTree = "<group>"; };
+		51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityTableViewCell.swift; sourceTree = "<group>"; };
 		5F9668601E40CBB100CD66CA /* LazyDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9668651E40CBB100CD66CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F9668681E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F96686D1E40CBB100CD66CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F9668701E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F9668721E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +103,8 @@
 			children = (
 				37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */,
 				5FC50C981E42004600358724 /* ClinicalCondition.swift */,
+				51CE379F1E42075900EA9902 /* Severity.swift */,
+				37CAE6D21E42327800DA4E33 /* Weight.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -119,14 +133,18 @@
 			isa = PBXGroup;
 			children = (
 				5F9668631E40CBB100CD66CA /* AppDelegate.swift */,
+				51CE379D1E4206E800EA9902 /* SeverityViewController.swift */,
 				5F9668651E40CBB100CD66CA /* ViewController.swift */,
-				5F9668671E40CBB100CD66CA /* Main.storyboard */,
+				37CAE6CC1E422EDE00DA4E33 /* Main.storyboard */,
 				5F96686D1E40CBB100CD66CA /* Assets.xcassets */,
 				5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */,
 				5F9668721E40CBB100CD66CA /* Info.plist */,
 				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
 				51CE37981E40EB6F00EA9902 /* Models */,
 				51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */,
+				51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */,
+				37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */,
+				37CAE6D01E42312700DA4E33 /* WeightTableViewCell.swift */,
 			);
 			path = LazyDoctor;
 			sourceTree = "<group>";
@@ -260,7 +278,7 @@
 			files = (
 				5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */,
 				5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */,
-				5F9668691E40CBB100CD66CA /* Main.storyboard in Resources */,
+				37CAE6CD1E422EDE00DA4E33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +303,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CAE6D11E42312700DA4E33 /* WeightTableViewCell.swift in Sources */,
 				5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */,
 				51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */,
 				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
+				51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */,
+				37CAE6CF1E4230AE00DA4E33 /* WeightViewController.swift in Sources */,
 				37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */,
+				51CE37A01E42075900EA9902 /* Severity.swift in Sources */,
+				51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */,
 				5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */,
 				5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */,
+				37CAE6D31E42327800DA4E33 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5F9668671E40CBB100CD66CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F9668681E40CBB100CD66CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
