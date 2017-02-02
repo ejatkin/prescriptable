@@ -38,10 +38,11 @@ class AllergyViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         clinicalCondition?.isPenicillin = allergyArray[indexPath!.row]
+        performSegue(withIdentifier: "showConfirmationSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showAllergySegue") {
+        if (segue.identifier == "showConfirmationSegue") {
             let confirmationViewController = segue.destination as! ConfirmationViewController
             confirmationViewController.clinicalCondition = clinicalCondition
             

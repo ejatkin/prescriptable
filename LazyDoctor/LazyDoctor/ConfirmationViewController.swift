@@ -12,6 +12,22 @@ class ConfirmationViewController: UIViewController {
 
     var clinicalCondition: ClinicalCondition? = nil
     
+    @IBOutlet weak var systemButton: UIButton!
+    
+    @IBOutlet weak var weightButton: UIButton!
+    @IBOutlet weak var severityButton: UIButton!
+    
+    @IBOutlet weak var isChildButton: UIButton!
+    
+    
+    @IBOutlet weak var isPregnantButton: UIButton!
+    
+    
+    @IBOutlet weak var allergyButton: UIButton!
+    
+    @IBOutlet weak var confirnButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +35,10 @@ class ConfirmationViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setButton() {
+        systemButton.setTitle(clinicalCondition?.system, for: .normal)
     }
     
 
