@@ -12,9 +12,8 @@ class SeverityViewController: UIViewController, UITableViewDelegate, UITableView
     
     let severity = Severity().severityArray
     
-    var passedValue: String!
-    var valueToPass: String!
-
+    var clinicalCondition: ClinicalCondition? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,17 +36,14 @@ class SeverityViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-        let currentCell = tableView.cellForRow(at: indexPath!) as? SeverityTableViewCell
-        
-        valueToPass = currentCell?.severityLabel?.text
+        clinicalCondition?.severity = severity[indexPath!.row]
         performSegue(withIdentifier: "showWeight", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showWeight") {
             let weightViewController = segue.destination as! WeightViewController
-            
-            weightViewController.passedValue = valueToPass
+            weightViewController.clinicalCondition = clinicalCondition
         }
     }
 

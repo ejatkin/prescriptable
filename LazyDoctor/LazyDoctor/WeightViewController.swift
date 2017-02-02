@@ -12,10 +12,8 @@ class WeightViewController: UIViewController, UITableViewDataSource, UITableView
     
     let weight = Weight().weightArray
     
-    var valueToPass: String!
-    var passedValue: String!
+    var clinicalCondition: ClinicalCondition? = nil
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,14 +22,6 @@ class WeightViewController: UIViewController, UITableViewDataSource, UITableView
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "WeightCell") as? WeightTableViewCell
-//        let row = indexPath.row
-//        cell?.weightLabel.text = weight[row]
-//        
-//        return cell!
-//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeightCell") as? WeightTableViewCell
@@ -47,17 +37,14 @@ class WeightViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-        let currentCell = tableView.cellForRow(at: indexPath!) as? WeightTableViewCell
-        
-        valueToPass = currentCell?.weightLabel?.text
+         clinicalCondition?.weight = weight[indexPath!.row]
         performSegue(withIdentifier: "ShowChildOrAdultSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "ShowChildOrAdultSegue") {
             let childOrAdultViewController = segue.destination as! ChildOrAdultViewController
-            
-            childOrAdultViewController.passedValue = valueToPass
+            childOrAdultViewController.clinicalCondition = clinicalCondition
         }
     }
     

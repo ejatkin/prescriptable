@@ -1,17 +1,16 @@
 //
-//  ChildOrAdultViewController.swift
+//  AllergyViewController.swift
 //  LazyDoctor
 //
-//  Created by Elizabeth Atkin on 01/02/2017.
+//  Created by María Verónica Sonzini on 02/02/2017.
 //  Copyright © 2017 Elizabeth Atkin, Dan Pelensky, Veronica Sonzini. All rights reserved.
 //
 
 import UIKit
 
-class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AllergyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let childOrAdult = ChildOrAdult().childarray
-    
+    var allergyArray = Allergy().allergyArray
     var clinicalCondition: ClinicalCondition? = nil
 
     override func viewDidLoad() {
@@ -23,28 +22,30 @@ class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return childOrAdult.count
+        return allergyArray.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ChildOrAdultCell") as? ChildOrAdultTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AllergyCell") as? AllergyTableViewCell
         let row = indexPath.row
-        cell?.childoradultLabel.text = childOrAdult[row]
+        
+        cell?.allergyLabel.text = allergyArray[row]
+        
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-        clinicalCondition?.isChild = childOrAdult[indexPath!.row]
-        performSegue(withIdentifier: "showPregnantSegue", sender: self)
+        clinicalCondition?.isPenicillin = allergyArray[indexPath!.row]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showPregnantSegue") {
-            let pregnantViewController = segue.destination as! PregnantViewController
-            pregnantViewController.clinicalCondition = clinicalCondition
+        if (segue.identifier == "showAllergySegue") {
+            let confirmationViewController = segue.destination as! ConfirmationViewController
+            confirmationViewController.clinicalCondition = clinicalCondition
+            
         }
     }
-    
-    
+
 }
