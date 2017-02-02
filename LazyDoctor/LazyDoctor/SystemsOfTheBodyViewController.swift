@@ -40,17 +40,14 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-        let currentCell = tableView.cellForRow(at: indexPath!) as? SystemOfTheBodyTableViewCell
-        
-        valueToPass = currentCell?.systemOfTheBodyTitleLabel?.text
+                clinicalCondition?.system = bodySystems[indexPath!.row]
         performSegue(withIdentifier: "showSeverity", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showSeverity") {
             let severityViewController = segue.destination as! SeverityViewController
-            clinicalCondition?.system = valueToPass
-            severityViewController.passedValue = valueToPass
+            severityViewController.clinicalCondition = clinicalCondition
             
             
         }

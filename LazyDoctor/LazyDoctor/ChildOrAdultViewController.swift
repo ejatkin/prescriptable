@@ -10,10 +10,9 @@ import UIKit
 
 class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var valueToPass: String!
-    var passedValue: String!
-    
     let childOrAdult = ChildOrAdult().childarray
+    
+    var clinicalCondition: ClinicalCondition? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +35,14 @@ class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-        let currentCell = tableView.cellForRow(at: indexPath!) as? ChildOrAdultTableViewCell
-        
-        valueToPass = currentCell?.childoradultLabel?.text
+        clinicalCondition?.isChild = childOrAdult[indexPath!.row]
         performSegue(withIdentifier: "showPregnantSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showPregnantSegue") {
-            
             let pregnantViewController = segue.destination as! PregnantViewController
-            pregnantViewController.passedValue = valueToPass
+            pregnantViewController.clinicalCondition = clinicalCondition
         }
     }
     
