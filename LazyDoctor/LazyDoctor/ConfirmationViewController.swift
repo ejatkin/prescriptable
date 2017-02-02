@@ -49,20 +49,28 @@ class ConfirmationViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "backToSystems") {
-            _ = segue.destination as! SystemsOfTheBodyViewController
-        } else if (segue.identifier == "backToSeverity") {
-            _ = segue.destination as! SeverityViewController
-        } else if (segue.identifier == "backToWeight") {
-            _ = segue.destination as! WeightViewController
-        } else if (segue.identifier == "backToChildOrAdult") {
-            _ = segue.destination as! ChildOrAdultViewController
-        } else if (segue.identifier == "backToPregnant") {
-            _ = segue.destination as! PregnantViewController
-        } else if (segue.identifier == "backToAllergy") {
-            _ = segue.destination as! AllergyViewController
+        if (segue.identifier == "showPrescription") {
+            let prescriptionViewController = segue.destination as! PrescriptionViewController
+            prescriptionViewController.clinicalCondition = clinicalCondition 
         }
-        
     }
+
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if (segue.identifier == "backToSystems") {
+//            _ = segue.destination as! SystemsOfTheBodyViewController
+//        } else if (segue.identifier == "backToSeverity") {
+//            _ = segue.destination as! SeverityViewController
+//        } else if (segue.identifier == "backToWeight") {
+//            _ = segue.destination as! WeightViewController
+//        } else if (segue.identifier == "backToChildOrAdult") {
+//            _ = segue.destination as! ChildOrAdultViewController
+//        } else if (segue.identifier == "backToPregnant") {
+//            _ = segue.destination as! PregnantViewController
+//        } else if (segue.identifier == "backToAllergy") {
+//            _ = segue.destination as! AllergyViewController
+//        }
+//        
+//    }
 }
 

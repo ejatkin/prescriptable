@@ -13,6 +13,7 @@ class AllergyViewController: UIViewController, UITableViewDelegate, UITableViewD
     var allergyArray = Allergy().allergyArray
     var clinicalCondition: ClinicalCondition? = nil
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

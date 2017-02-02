@@ -11,7 +11,6 @@ import UIKit
 class WeightViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let weight = Weight().weightArray
-    
     var clinicalCondition: ClinicalCondition? = nil
 
     override func viewDidLoad() {

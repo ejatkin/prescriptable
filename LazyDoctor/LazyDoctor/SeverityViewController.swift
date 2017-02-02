@@ -11,9 +11,8 @@ import UIKit
 class SeverityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let severity = Severity().severityArray
-    
     var clinicalCondition: ClinicalCondition? = nil
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

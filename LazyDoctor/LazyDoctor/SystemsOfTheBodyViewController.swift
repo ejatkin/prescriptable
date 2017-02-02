@@ -11,10 +11,7 @@ import UIKit
 class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     let bodySystems = SystemsOfTheBody().bodySystems
-    
     var clinicalCondition: ClinicalCondition? = nil
-    
-    var valueToPass: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +37,7 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-                clinicalCondition?.system = bodySystems[indexPath!.row]
+        clinicalCondition?.system = bodySystems[indexPath!.row]
         performSegue(withIdentifier: "showSeverity", sender: self)
     }
     
@@ -48,8 +45,6 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
         if (segue.identifier == "showSeverity") {
             let severityViewController = segue.destination as! SeverityViewController
             severityViewController.clinicalCondition = clinicalCondition
-            
-            
         }
     }
     

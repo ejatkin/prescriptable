@@ -11,8 +11,8 @@ import UIKit
 class PregnantViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let pregnantArray = Pregnant().pregnantArray
-    
     var clinicalCondition: ClinicalCondition? = nil
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

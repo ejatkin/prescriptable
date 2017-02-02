@@ -24,6 +24,9 @@
 		51DCA6F81E43523400463EF9 /* AllergyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6F71E43523400463EF9 /* AllergyTableViewCell.swift */; };
 		51DCA6FA1E43546D00463EF9 /* Allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6F91E43546D00463EF9 /* Allergy.swift */; };
 		51DCA6FC1E4358F800463EF9 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6FB1E4358F800463EF9 /* ConfirmationViewController.swift */; };
+		51DCA6FE1E43948F00463EF9 /* PrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6FD1E43948F00463EF9 /* PrescriptionViewController.swift */; };
+		51DCA7001E4394A200463EF9 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6FF1E4394A200463EF9 /* PrescriptionTableViewCell.swift */; };
+		51DCA7021E43955400463EF9 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA7011E43955400463EF9 /* Prescription.swift */; };
 		5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668631E40CBB100CD66CA /* AppDelegate.swift */; };
 		5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686D1E40CBB100CD66CA /* Assets.xcassets */; };
 		5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */; };
@@ -72,6 +75,9 @@
 		51DCA6F71E43523400463EF9 /* AllergyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllergyTableViewCell.swift; sourceTree = "<group>"; };
 		51DCA6F91E43546D00463EF9 /* Allergy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allergy.swift; sourceTree = "<group>"; };
 		51DCA6FB1E4358F800463EF9 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		51DCA6FD1E43948F00463EF9 /* PrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
+		51DCA6FF1E4394A200463EF9 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		51DCA7011E43955400463EF9 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		5F9668601E40CBB100CD66CA /* LazyDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F96686D1E40CBB100CD66CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 				5FC50C9E1E4241A000358724 /* ChildOrAdult.swift */,
 				51DCA6F11E424BF700463EF9 /* Pregnant.swift */,
 				51DCA6F91E43546D00463EF9 /* Allergy.swift */,
+				51DCA7011E43955400463EF9 /* Prescription.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -134,13 +141,14 @@
 			isa = PBXGroup;
 			children = (
 				51DCA6F41E433BD900463EF9 /* TableViewCells */,
-				51CE379D1E4206E800EA9902 /* SeverityViewController.swift */,
 				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
+				51CE379D1E4206E800EA9902 /* SeverityViewController.swift */,
 				37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */,
 				5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */,
 				51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */,
 				51DCA6F51E43521100463EF9 /* AllergyViewController.swift */,
 				51DCA6FB1E4358F800463EF9 /* ConfirmationViewController.swift */,
+				51DCA6FD1E43948F00463EF9 /* PrescriptionViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */,
 				51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */,
 				51DCA6F71E43523400463EF9 /* AllergyTableViewCell.swift */,
+				51DCA6FF1E4394A200463EF9 /* PrescriptionTableViewCell.swift */,
 			);
 			name = TableViewCells;
 			sourceTree = "<group>";
@@ -358,10 +367,13 @@
 				37CAE6CF1E4230AE00DA4E33 /* WeightViewController.swift in Sources */,
 				51DCA6EE1E424AA500463EF9 /* PregnantTableViewCell.swift in Sources */,
 				37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */,
+				51DCA7001E4394A200463EF9 /* PrescriptionTableViewCell.swift in Sources */,
 				51DCA6F81E43523400463EF9 /* AllergyTableViewCell.swift in Sources */,
 				51CE37A01E42075900EA9902 /* Severity.swift in Sources */,
+				51DCA7021E43955400463EF9 /* Prescription.swift in Sources */,
 				51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */,
 				51DCA6F61E43521100463EF9 /* AllergyViewController.swift in Sources */,
+				51DCA6FE1E43948F00463EF9 /* PrescriptionViewController.swift in Sources */,
 				5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */,
 				51DCA6FA1E43546D00463EF9 /* Allergy.swift in Sources */,
 				5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */,

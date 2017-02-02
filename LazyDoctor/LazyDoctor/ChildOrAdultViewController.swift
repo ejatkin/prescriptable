@@ -11,8 +11,8 @@ import UIKit
 class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let childOrAdult = ChildOrAdult().childarray
-    
     var clinicalCondition: ClinicalCondition? = nil
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
