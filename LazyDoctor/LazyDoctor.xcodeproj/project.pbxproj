@@ -21,7 +21,6 @@
 		51DCA6F01E424AB900463EF9 /* PregnantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */; };
 		51DCA6F21E424BF700463EF9 /* Pregnant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6F11E424BF700463EF9 /* Pregnant.swift */; };
 		5F9668641E40CBB100CD66CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668631E40CBB100CD66CA /* AppDelegate.swift */; };
-		5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668651E40CBB100CD66CA /* ViewController.swift */; };
 		5F96686E1E40CBB100CD66CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686D1E40CBB100CD66CA /* Assets.xcassets */; };
 		5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */; };
 		5F96687C1E40CBB100CD66CA /* LazyDoctorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */; };
@@ -67,7 +66,6 @@
 		51DCA6F11E424BF700463EF9 /* Pregnant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pregnant.swift; sourceTree = "<group>"; };
 		5F9668601E40CBB100CD66CA /* LazyDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F9668651E40CBB100CD66CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F96686D1E40CBB100CD66CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F9668701E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F9668721E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +121,31 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		51DCA6F31E433BC400463EF9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				51DCA6F41E433BD900463EF9 /* TableViewCells */,
+				51CE379D1E4206E800EA9902 /* SeverityViewController.swift */,
+				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
+				37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */,
+				5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */,
+				51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		51DCA6F41E433BD900463EF9 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */,
+				51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */,
+				37CAE6D01E42312700DA4E33 /* WeightTableViewCell.swift */,
+				5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */,
+				51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		5F9668571E40CBB100CD66CA = {
 			isa = PBXGroup;
 			children = (
@@ -147,22 +170,12 @@
 			isa = PBXGroup;
 			children = (
 				5F9668631E40CBB100CD66CA /* AppDelegate.swift */,
-				51CE379D1E4206E800EA9902 /* SeverityViewController.swift */,
-				5F9668651E40CBB100CD66CA /* ViewController.swift */,
+				51DCA6F31E433BC400463EF9 /* ViewControllers */,
 				37CAE6CC1E422EDE00DA4E33 /* Main.storyboard */,
 				5F96686D1E40CBB100CD66CA /* Assets.xcassets */,
 				5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */,
 				5F9668721E40CBB100CD66CA /* Info.plist */,
-				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
 				51CE37981E40EB6F00EA9902 /* Models */,
-				51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */,
-				51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */,
-				37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */,
-				37CAE6D01E42312700DA4E33 /* WeightTableViewCell.swift */,
-				5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */,
-				5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */,
-				51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */,
-				51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */,
 			);
 			path = LazyDoctor;
 			sourceTree = "<group>";
@@ -322,7 +335,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CAE6D11E42312700DA4E33 /* WeightTableViewCell.swift in Sources */,
-				5F9668661E40CBB100CD66CA /* ViewController.swift in Sources */,
 				51DCA6F01E424AB900463EF9 /* PregnantViewController.swift in Sources */,
 				51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */,
 				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
