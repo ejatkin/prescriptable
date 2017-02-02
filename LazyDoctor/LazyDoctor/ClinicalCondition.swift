@@ -17,5 +17,4 @@ class ClinicalCondition: NSObject {
         var isChild: Bool = false
         var isPregnant: Bool = false
         var isPenicillin: Bool = false
-
 }

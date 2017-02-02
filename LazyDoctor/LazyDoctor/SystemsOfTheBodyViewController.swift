@@ -12,21 +12,19 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     
     let bodySystems = SystemsOfTheBody().bodySystems
     
-    let clinicalCondition = ClinicalCondition()
+    var clinicalCondition: ClinicalCondition? = nil
     
     var valueToPass: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clinicalCondition = ClinicalCondition()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    //
-    //    func updateClinicalConditionWithSelectedItem() {
-    //        clinicalCondition.system =
-    //    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SystemOfTheBodyCell") as? SystemOfTheBodyTableViewCell
@@ -48,12 +46,14 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
         performSegue(withIdentifier: "showSeverity", sender: self)
     }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if (segue.identifier == "showSeverity") {
-                let severityViewController = segue.destination as! SeverityViewController
-    
-                severityViewController.passedValue = valueToPass
-            }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showSeverity") {
+            let severityViewController = segue.destination as! SeverityViewController
+            clinicalCondition?.system = valueToPass
+            severityViewController.passedValue = valueToPass
+            
+            
         }
+    }
     
 }
