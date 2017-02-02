@@ -39,7 +39,14 @@ class PregnantViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         clinicalCondition?.isPregnant = pregnantArray[indexPath!.row]
-
+        performSegue(withIdentifier: "showAllergySegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showAllergySegue") {
+            let allergyViewController = segue.destination as! AllergyViewController
+            allergyViewController.clinicalCondition = clinicalCondition
+        }
     }
     
 }
