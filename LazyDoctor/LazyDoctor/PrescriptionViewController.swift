@@ -99,4 +99,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             return 0
         }
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
+    }
 }

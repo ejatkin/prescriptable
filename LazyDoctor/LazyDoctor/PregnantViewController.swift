@@ -56,4 +56,8 @@ class PregnantViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
+    }
+    
 }

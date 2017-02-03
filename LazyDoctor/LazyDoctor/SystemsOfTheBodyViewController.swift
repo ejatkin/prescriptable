@@ -12,7 +12,6 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     
     let bodySystems = SystemsOfTheBody().bodySystems
     var clinicalCondition: ClinicalCondition? = nil
-    
     var edit: Bool = false
     
     override func viewDidLoad() {
@@ -29,6 +28,7 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
         let cell = tableView.dequeueReusableCell(withIdentifier: "SystemOfTheBodyCell") as? SystemOfTheBodyTableViewCell
         let row = indexPath.row
         cell?.systemOfTheBodyTitleLabel.text = bodySystems[row]
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         return cell!
     }
@@ -53,6 +53,10 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
             severityViewController.clinicalCondition = clinicalCondition
             
         }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
     
 }
