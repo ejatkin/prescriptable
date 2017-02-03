@@ -47,8 +47,30 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PrescriptionCell") as? PrescriptionTableViewCell
         let row = indexPath.row
-        cell?.prescriptionLabel.text = cnsAntibiotics[row]
         
+        
+        
+        if clinicalCondition?.system == "Central Nervous System" {
+            cell?.prescriptionLabel.text = cnsAntibiotics[row]
+        } else if clinicalCondition?.system == "Lower Respiratory Tract" {
+            cell?.prescriptionLabel.text = respiratoryAntibiotics[row]
+        } else if clinicalCondition?.system == "Urinary Tract" {
+            cell?.prescriptionLabel.text = urinaryAntibiotics[row]
+        } else if clinicalCondition?.system == "Gastrointestinal Tract" {
+            cell?.prescriptionLabel.text = gastroAntibiotics[row]
+        } else if clinicalCondition?.system == "Skin and Soft Tissue" {
+            cell?.prescriptionLabel.text = skinAndSoftTissueAntibiotics[row]
+        } else if clinicalCondition?.system == "Bone and Joint" {
+            cell?.prescriptionLabel.text = boneAndJointAntibiotics[row]
+        } else if clinicalCondition?.system == "Obstetrics and Gynaecology" {
+            cell?.prescriptionLabel.text = obgynAntibiotics[row]
+        } else if clinicalCondition?.system == "Genital Tract" {
+            cell?.prescriptionLabel.text = genitalAntibiotics[row]
+        } else if clinicalCondition?.system == "Ear, Nose and Throat" {
+            cell?.prescriptionLabel.text = entAntibiotics[row]
+        } else if clinicalCondition?.system == "Cardiovascular" {
+            cell?.prescriptionLabel.text = cardioAntibiotics[row]
+        }
         return cell!
     }
     
@@ -59,6 +81,20 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             return respiratoryAntibiotics.count
         } else if clinicalCondition?.system == "Urinary Tract" {
             return urinaryAntibiotics.count
+        } else if clinicalCondition?.system == "Gastrointestinal Tract" {
+            return gastroAntibiotics.count
+        } else if clinicalCondition?.system == "Skin and Soft Tissue" {
+            return skinAndSoftTissueAntibiotics.count
+        } else if clinicalCondition?.system == "Bone and Joint" {
+            return boneAndJointAntibiotics.count
+        } else if clinicalCondition?.system == "Obstetrics and Gynaecology" {
+            return obgynAntibiotics.count
+        } else if clinicalCondition?.system == "Genital Tract" {
+            return genitalAntibiotics.count
+        } else if clinicalCondition?.system == "Ear, Nose and Throat" {
+            return entAntibiotics.count
+        } else if clinicalCondition?.system == "Cardiovascular" {
+            return cardioAntibiotics.count
         } else {
             return 0
         }
