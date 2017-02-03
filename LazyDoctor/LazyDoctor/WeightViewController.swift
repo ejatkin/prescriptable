@@ -11,8 +11,9 @@ import UIKit
 class WeightViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let weight = Weight().weightArray
-    
     var clinicalCondition: ClinicalCondition? = nil
+
+    var edit: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,11 @@ class WeightViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
          clinicalCondition?.weight = weight[indexPath!.row]
-        performSegue(withIdentifier: "ShowChildOrAdultSegue", sender: self)
+        if edit {
+            _ = navigationController?.popViewController(animated: true)
+        } else {
+            performSegue(withIdentifier: "ShowChildOrAdultSegue", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

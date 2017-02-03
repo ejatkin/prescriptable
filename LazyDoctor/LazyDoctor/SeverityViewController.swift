@@ -11,9 +11,10 @@ import UIKit
 class SeverityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let severity = Severity().severityArray
-    
     var clinicalCondition: ClinicalCondition? = nil
-    
+
+    var edit: Bool = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,7 +38,11 @@ class SeverityViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         clinicalCondition?.severity = severity[indexPath!.row]
-        performSegue(withIdentifier: "showWeight", sender: self)
+        if edit {
+            _ = navigationController?.popViewController(animated: true)
+        } else {
+            performSegue(withIdentifier: "showWeight", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

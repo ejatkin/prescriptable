@@ -13,6 +13,9 @@ class AllergyViewController: UIViewController, UITableViewDelegate, UITableViewD
     var allergyArray = Allergy().allergyArray
     var clinicalCondition: ClinicalCondition? = nil
 
+    var edit: Bool = false
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -38,14 +41,19 @@ class AllergyViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         clinicalCondition?.isPenicillin = allergyArray[indexPath!.row]
+        if edit {
+            clinicalCondition?.isPenicillin = allergyArray[indexPath!.row]
+            _ = navigationController?.popViewController(animated: true)
+        } else {
+            performSegue(withIdentifier: "showConfirmationSegue", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showAllergySegue") {
+        if (segue.identifier == "showConfirmationSegue") {
             let confirmationViewController = segue.destination as! ConfirmationViewController
             confirmationViewController.clinicalCondition = clinicalCondition
             
         }
     }
-
 }

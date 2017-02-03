@@ -11,8 +11,10 @@ import UIKit
 class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let childOrAdult = ChildOrAdult().childarray
-    
     var clinicalCondition: ClinicalCondition? = nil
+
+    var edit: Bool = false
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +38,12 @@ class ChildOrAdultViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         clinicalCondition?.isChild = childOrAdult[indexPath!.row]
-        performSegue(withIdentifier: "showPregnantSegue", sender: self)
+        if edit {
+            _ = navigationController?.popViewController(animated: true)
+        } else {
+            performSegue(withIdentifier: "showPregnantSegue", sender: self)
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

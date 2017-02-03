@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1eZ-qU-l0N">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <rect key="frame" x="16" y="-44" width="343" height="711"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SystemOfTheBodyCell" id="QXL-L3-Asy" customClass="SystemOfTheBodyTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="de0-39-nvM">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <rect key="frame" x="16" y="-44" width="343" height="711"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeverityCell" id="cja-Wv-jhD" customClass="SeverityTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
@@ -148,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sJW-c7-2Br">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <rect key="frame" x="16" y="-44" width="343" height="711"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeightCell" id="Ojn-yu-5no" customClass="WeightTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
@@ -210,7 +210,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d5n-8p-xil">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <rect key="frame" x="16" y="-44" width="343" height="711"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChildOrAdultCell" id="ivh-pH-4Ce" customClass="ChildOrAdultTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
@@ -272,7 +272,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hKw-iR-1cX">
-                                <rect key="frame" x="16" y="44" width="343" height="623"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PregnantCell" id="6Ml-hX-xgI" customClass="PregnantTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
@@ -334,7 +334,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zjd-v1-c8O">
-                                <rect key="frame" x="16" y="44" width="343" height="623"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllergyCell" id="gUg-gd-DKL" customClass="AllergyTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
@@ -375,10 +375,173 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Zjd-v1-c8O" secondAttribute="trailing" id="cSX-qQ-5Fp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Nvb-of-wyk" kind="show" identifier="showConfirmationSegue" id="gRa-cc-Rgw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gv5-lk-pa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4872.8000000000002" y="38.23088455772114"/>
+        </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="LR2-Y4-Gh0">
+            <objects>
+                <viewController id="Nvb-of-wyk" customClass="ConfirmationViewController" customModule="LazyDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fQi-Tu-VG0"/>
+                        <viewControllerLayoutGuide type="bottom" id="BIa-Ix-3E8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bcm-qt-d4t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCx-Vi-bwi">
+                                <rect key="frame" x="36" y="544" width="303" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="8Uc-fh-x7Z" kind="show" identifier="showPrescription" id="rev-iy-lPf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZk-i0-kx7">
+                                <rect key="frame" x="36" y="50" width="303" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backToSystems" id="xgj-ZB-pZZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hck-ya-fMI">
+                                <rect key="frame" x="36" y="100" width="303" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Igt-Ch-6yT" kind="show" identifier="backToSeverity" id="FVM-q2-RSs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXp-IQ-Q2Q">
+                                <rect key="frame" x="36" y="150" width="303" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="cQT-k6-tOK" kind="show" identifier="backToWeight" id="Mcz-hG-Dcs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFA-l7-vSK">
+                                <rect key="frame" x="36" y="200" width="303" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="rDQ-ui-vEd" kind="show" identifier="backToChildOrAdult" id="tMM-KP-5Sf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opT-Ok-emN">
+                                <rect key="frame" x="36" y="250" width="303" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="8zN-EE-Jim" kind="show" identifier="backToPregnant" id="7UI-p3-YyY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYU-1Y-gli">
+                                <rect key="frame" x="36" y="300" width="303" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Oat-x9-yE7" kind="show" id="fVf-We-RgD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BIa-Ix-3E8" firstAttribute="top" secondItem="YCx-Vi-bwi" secondAttribute="bottom" constant="93" id="5Wr-jn-HNA"/>
+                            <constraint firstItem="YCx-Vi-bwi" firstAttribute="leading" secondItem="Bcm-qt-d4t" secondAttribute="leadingMargin" constant="20" id="Byf-jz-9MO"/>
+                            <constraint firstItem="hYU-1Y-gli" firstAttribute="leading" secondItem="Bcm-qt-d4t" secondAttribute="leadingMargin" constant="20" id="CQg-mP-2Zb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JFA-l7-vSK" secondAttribute="trailing" constant="20" id="CSi-IU-hBp"/>
+                            <constraint firstItem="JFA-l7-vSK" firstAttribute="leading" secondItem="Bcm-qt-d4t" secondAttribute="leadingMargin" constant="20" id="Hmp-sN-gR9"/>
+                            <constraint firstItem="dZk-i0-kx7" firstAttribute="leading" secondItem="Bcm-qt-d4t" secondAttribute="leadingMargin" constant="20" id="JrH-48-ugk"/>
+                            <constraint firstItem="JFA-l7-vSK" firstAttribute="top" secondItem="dXp-IQ-Q2Q" secondAttribute="bottom" constant="20" id="L1t-eP-sty"/>
+                            <constraint firstItem="opT-Ok-emN" firstAttribute="top" secondItem="JFA-l7-vSK" secondAttribute="bottom" constant="20" id="QAC-af-Ovy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dZk-i0-kx7" secondAttribute="trailing" constant="20" id="RpQ-XT-Wj6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hck-ya-fMI" secondAttribute="trailing" constant="20" id="Ynl-D1-596"/>
+                            <constraint firstItem="opT-Ok-emN" firstAttribute="leading" secondItem="Bcm-qt-d4t" secondAttribute="leadingMargin" constant="20" id="c9t-zj-BBF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dXp-IQ-Q2Q" secondAttribute="trailing" constant="20" id="dOr-vR-e9b"/>
+                            <constraint firstItem="dXp-IQ-Q2Q" firstAttribute="leading" secondItem="Bcm-qt-d4t" secondAttribute="leadingMargin" constant="20" id="dbv-9n-59C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="opT-Ok-emN" secondAttribute="trailing" constant="20" id="fNN-vh-GTk"/>
+                            <constraint firstItem="dZk-i0-kx7" firstAttribute="top" secondItem="fQi-Tu-VG0" secondAttribute="bottom" constant="30" id="k7v-La-WlU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hYU-1Y-gli" secondAttribute="trailing" constant="20" id="o6N-gJ-Uqh"/>
+                            <constraint firstItem="dXp-IQ-Q2Q" firstAttribute="top" secondItem="Hck-ya-fMI" secondAttribute="bottom" constant="20" id="pnh-7h-U9R"/>
+                            <constraint firstItem="Hck-ya-fMI" firstAttribute="top" secondItem="dZk-i0-kx7" secondAttribute="bottom" constant="20" id="s6N-Zu-Ljq"/>
+                            <constraint firstItem="hYU-1Y-gli" firstAttribute="top" secondItem="opT-Ok-emN" secondAttribute="bottom" constant="20" id="t9M-A8-V49"/>
+                            <constraint firstItem="Hck-ya-fMI" firstAttribute="leading" secondItem="Bcm-qt-d4t" secondAttribute="leadingMargin" constant="20" id="yzH-4w-fdf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YCx-Vi-bwi" secondAttribute="trailing" constant="20" id="zRP-7v-UQs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allergyButton" destination="hYU-1Y-gli" id="AKx-H6-bIa"/>
+                        <outlet property="confirmButton" destination="YCx-Vi-bwi" id="JJD-KM-eDK"/>
+                        <outlet property="isChildButton" destination="JFA-l7-vSK" id="mV0-q6-RGJ"/>
+                        <outlet property="isPregnantButton" destination="opT-Ok-emN" id="KMl-rC-CpQ"/>
+                        <outlet property="severityButton" destination="Hck-ya-fMI" id="L1L-uB-dus"/>
+                        <outlet property="systemButton" destination="dZk-i0-kx7" id="Gzy-Xp-Hcp"/>
+                        <outlet property="weightButton" destination="dXp-IQ-Q2Q" id="YUv-3T-Sg0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLX-48-Joa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5745" y="36"/>
+        </scene>
+        <!--Prescription View Controller-->
+        <scene sceneID="wzO-OA-mNd">
+            <objects>
+                <viewController id="8Uc-fh-x7Z" customClass="PrescriptionViewController" customModule="LazyDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3nb-YD-Mzj"/>
+                        <viewControllerLayoutGuide type="bottom" id="vLr-kh-Prg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GWT-L8-f62">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pSA-Xg-963">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrescriptionCell" id="itJ-f2-aog" customClass="PrescriptionTableViewCell" customModule="LazyDoctor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="itJ-f2-aog" id="VgA-d2-l9c">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whz-bV-eb2">
+                                                    <rect key="frame" x="150.5" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Whz-bV-eb2" firstAttribute="centerX" secondItem="VgA-d2-l9c" secondAttribute="centerX" id="3rq-y0-tnJ"/>
+                                                <constraint firstItem="Whz-bV-eb2" firstAttribute="centerY" secondItem="VgA-d2-l9c" secondAttribute="centerY" id="Ek6-a5-1Q3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="prescriptionLabel" destination="Whz-bV-eb2" id="9cc-tr-Ul8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Uc-fh-x7Z" id="3gC-zl-SCU"/>
+                                    <outlet property="delegate" destination="8Uc-fh-x7Z" id="rSK-ds-y3d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pSA-Xg-963" secondAttribute="trailing" id="7rQ-bZ-dkF"/>
+                            <constraint firstItem="vLr-kh-Prg" firstAttribute="top" secondItem="pSA-Xg-963" secondAttribute="bottom" id="FSy-kd-NDH"/>
+                            <constraint firstItem="pSA-Xg-963" firstAttribute="top" secondItem="3nb-YD-Mzj" secondAttribute="bottom" constant="-20" id="HKt-XN-EFN"/>
+                            <constraint firstItem="pSA-Xg-963" firstAttribute="leading" secondItem="GWT-L8-f62" secondAttribute="leadingMargin" id="mE3-us-bK8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7D-sE-ohq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6544.8000000000002" y="39.130434782608695"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GtP-1g-WYn">
@@ -399,4 +562,12 @@
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FVM-q2-RSs"/>
+        <segue reference="fVf-We-RgD"/>
+        <segue reference="Mcz-hG-Dcs"/>
+        <segue reference="xgj-ZB-pZZ"/>
+        <segue reference="tMM-KP-5Sf"/>
+        <segue reference="7UI-p3-YyY"/>
+    </inferredMetricsTieBreakers>
 </document>
