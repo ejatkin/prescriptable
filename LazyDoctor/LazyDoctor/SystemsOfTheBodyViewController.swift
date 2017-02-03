@@ -12,7 +12,6 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     
     let bodySystems = SystemsOfTheBody().bodySystems
     var clinicalCondition: ClinicalCondition? = nil
-    
     var edit: Bool = false
     
     override func viewDidLoad() {

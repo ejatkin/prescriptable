@@ -125,6 +125,7 @@
 		51CE37981E40EB6F00EA9902 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				51DCA6F41E433BD900463EF9 /* TableViewCells */,
 				37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */,
 				5FC50C981E42004600358724 /* ClinicalCondition.swift */,
 				51CE379F1E42075900EA9902 /* Severity.swift */,
@@ -140,7 +141,6 @@
 		51DCA6F31E433BC400463EF9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				51DCA6F41E433BD900463EF9 /* TableViewCells */,
 				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
 				51CE379D1E4206E800EA9902 /* SeverityViewController.swift */,
 				37CAE6CE1E4230AE00DA4E33 /* WeightViewController.swift */,
