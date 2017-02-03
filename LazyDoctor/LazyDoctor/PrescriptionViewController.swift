@@ -12,19 +12,31 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     var clinicalCondition: ClinicalCondition? = nil
     
-    var cnsAntibiotics = Prescription().cnsAntibiotics
-    var respiratoryAntibiotics = Prescription().respiratoryAntibiotics
-    var urinaryAntibiotics = Prescription().urinaryAntibiotics
-    var gastroAntibiotics = Prescription().gastroAntibiotics
-    var skinAndSoftTissueAntibiotics = Prescription().skinAndSoftTissueAntibiotics
-    var boneAndJointAntibiotics  = Prescription().boneAndJointAntibiotics
-    var obgynAntibiotics = Prescription().obgynAntibiotics
-    var genitalAntibiotics = Prescription().genitalAntibiotics
-    var entAntibiotics = Prescription().entAntibiotics
-    var cardioAntibiotics = Prescription().cardioAntibiotics
+    var prescription = Prescription()
+    var cnsAntibiotics: [String]!
+    var respiratoryAntibiotics: [String]!
+    var urinaryAntibiotics: [String]!
+    var gastroAntibiotics: [String]!
+    var skinAndSoftTissueAntibiotics: [String]!
+    var boneAndJointAntibiotics: [String]!
+    var obgynAntibiotics: [String]!
+    var genitalAntibiotics: [String]!
+    var entAntibiotics: [String]!
+    var cardioAntibiotics: [String]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        cnsAntibiotics = prescription.cnsAntibiotics
+        respiratoryAntibiotics = prescription.respiratoryAntibiotics
+        urinaryAntibiotics = prescription.urinaryAntibiotics
+        gastroAntibiotics = prescription.gastroAntibiotics
+        skinAndSoftTissueAntibiotics = prescription.skinAndSoftTissueAntibiotics
+        boneAndJointAntibiotics  = prescription.boneAndJointAntibiotics
+        obgynAntibiotics = prescription.obgynAntibiotics
+        genitalAntibiotics = prescription.genitalAntibiotics
+        entAntibiotics = prescription.entAntibiotics
+        cardioAntibiotics = prescription.cardioAntibiotics
+
 
     }
 
@@ -33,7 +45,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PrescriptionCell") as? PrescriptionTableViewCell
+        let row = indexPath.row
+        cell?.prescriptionLabel.text = cnsAntibiotics[row]
+        
+        return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,6 +59,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             return respiratoryAntibiotics.count
         } else if clinicalCondition?.system == "Urinary Tract" {
             return urinaryAntibiotics.count
+        } else {
+            return 0
         }
     }
 }

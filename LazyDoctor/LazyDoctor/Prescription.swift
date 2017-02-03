@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Prescription: NSObject {
+class Prescription {
     
     var cnsAntibiotics = ["Amoxicillin", "Ceftriaxone", "Chlorampheaicil", "Aciclobio", "Ciprofloxacin", "Gentamicin", "Rifampicin"]
     var respiratoryAntibiotics = ["Amoxicillin", "Clarithromycin", "Vancomycin", "Co-amoxiclav", "Piperacillin/Tazobactam", "Gentamicin", "Teicoplanin", "Metronidazole", "Doxycycline"]

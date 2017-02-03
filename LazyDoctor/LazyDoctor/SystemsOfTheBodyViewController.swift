@@ -13,6 +13,8 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     let bodySystems = SystemsOfTheBody().bodySystems
     var clinicalCondition: ClinicalCondition? = nil
     
+    var edit: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         clinicalCondition = ClinicalCondition()
@@ -38,13 +40,18 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
         clinicalCondition?.system = bodySystems[indexPath!.row]
-        performSegue(withIdentifier: "showSeverity", sender: self)
+        if edit {
+            _ = navigationController?.popViewController(animated: true)
+        } else {
+            performSegue(withIdentifier: "showSeverity", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showSeverity") {
             let severityViewController = segue.destination as! SeverityViewController
             severityViewController.clinicalCondition = clinicalCondition
+            
         }
     }
     

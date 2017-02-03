@@ -31,7 +31,6 @@ class ConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setButton()
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,30 +46,36 @@ class ConfirmationViewController: UIViewController {
         allergyButton.setTitle(clinicalCondition?.isPenicillin, for: .normal)
         confirmButton.setTitle("Confirm", for: .normal)
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showPrescription") {
             let prescriptionViewController = segue.destination as! PrescriptionViewController
-            prescriptionViewController.clinicalCondition = clinicalCondition 
+            prescriptionViewController.clinicalCondition = clinicalCondition
         }
-    }
+        if let systemsViewController = segue.destination as? SystemsOfTheBodyViewController {
+            systemsViewController.edit = true
+            systemsViewController.clinicalCondition = clinicalCondition
+        } else if let severityViewController  = segue.destination as? SeverityViewController {
+            severityViewController.edit = true
+            severityViewController.clinicalCondition = clinicalCondition
 
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if (segue.identifier == "backToSystems") {
-//            _ = segue.destination as! SystemsOfTheBodyViewController
-//        } else if (segue.identifier == "backToSeverity") {
-//            _ = segue.destination as! SeverityViewController
-//        } else if (segue.identifier == "backToWeight") {
-//            _ = segue.destination as! WeightViewController
-//        } else if (segue.identifier == "backToChildOrAdult") {
-//            _ = segue.destination as! ChildOrAdultViewController
-//        } else if (segue.identifier == "backToPregnant") {
-//            _ = segue.destination as! PregnantViewController
-//        } else if (segue.identifier == "backToAllergy") {
-//            _ = segue.destination as! AllergyViewController
-//        }
-//        
-//    }
+        } else if let weightViewController = segue.destination as? WeightViewController {
+            weightViewController.edit = true
+            weightViewController.clinicalCondition = clinicalCondition
+
+        } else if let childViewController = segue.destination as? ChildOrAdultViewController {
+            childViewController.edit = true
+            childViewController.clinicalCondition = clinicalCondition
+
+        } else if let pregnantViewController = segue.destination as? PregnantViewController {
+            pregnantViewController.edit = true
+            pregnantViewController.clinicalCondition = clinicalCondition
+
+        } else if let allergyViewController = segue.destination as? AllergyViewController {
+            allergyViewController.edit = true
+            allergyViewController.clinicalCondition = clinicalCondition
+}
+        
+    }
 }
 
