@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClinicalCondition: NSObject {
+class ClinicalCondition {
     
     
         var system: String = ""

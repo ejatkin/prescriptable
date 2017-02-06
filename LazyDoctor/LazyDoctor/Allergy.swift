@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Allergy: NSObject {
+class Allergy {
     
     let allergyArray = ["Allergic to Penicillin", "Not Allergic to Penicillin"]
     

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Severity: NSObject {
+class Severity {
     
     let severityArray = ["Severe", "Moderate", "Mild"]
 

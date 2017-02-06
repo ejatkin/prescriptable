@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Pregnant: NSObject {
+class Pregnant {
     
     let pregnantArray = ["Pregnant", "Not Pregnant"]
 
