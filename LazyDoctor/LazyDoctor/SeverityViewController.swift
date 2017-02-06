@@ -47,8 +47,8 @@ class SeverityViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showWeight") {
-            let weightViewController = segue.destination as! WeightViewController
-            weightViewController.clinicalCondition = clinicalCondition
+            let typeOfInfectionViewController = segue.destination as! TypeOfInfectionViewController
+            typeOfInfectionViewController.clinicalCondition = clinicalCondition
         }
     }
     

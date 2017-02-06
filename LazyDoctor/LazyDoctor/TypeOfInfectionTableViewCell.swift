@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeightTableViewCell: UITableViewCell {
+class TypeOfInfectionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var weightLabel: UILabel!
     

@@ -40,7 +40,6 @@ class ConfirmationViewController: UIViewController {
     func setButton() {
         systemButton.setTitle(clinicalCondition?.system, for: .normal)
         weightButton.setTitle(clinicalCondition?.weight, for: .normal)
-        severityButton.setTitle(clinicalCondition?.severity, for: .normal)
         isChildButton.setTitle(clinicalCondition?.isChild, for: .normal)
         isPregnantButton.setTitle(clinicalCondition?.isPregnant, for: .normal)
         allergyButton.setTitle(clinicalCondition?.isPenicillin, for: .normal)
@@ -59,9 +58,9 @@ class ConfirmationViewController: UIViewController {
             severityViewController.edit = true
             severityViewController.clinicalCondition = clinicalCondition
 
-        } else if let weightViewController = segue.destination as? WeightViewController {
-            weightViewController.edit = true
-            weightViewController.clinicalCondition = clinicalCondition
+        } else if let typeOfInfectionViewController = segue.destination as? TypeOfInfectionViewController {
+            typeOfInfectionViewController.edit = true
+            typeOfInfectionViewController.clinicalCondition = clinicalCondition
 
         } else if let childViewController = segue.destination as? ChildOrAdultViewController {
             childViewController.edit = true
