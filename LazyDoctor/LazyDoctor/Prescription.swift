@@ -10,7 +10,7 @@ import UIKit
 
 class Prescription {
     
-    var cnsAntibiotics = ["Amoxicillin", "Ceftriaxone", "Chlorampheaicil", "Aciclobio", "Ciprofloxacin", "Gentamicin", "Rifampicin"]
+    var cnsAntibiotics = ["Amoxicillin", "Ceftriaxone", "Chlorampheaicol", "Aciclobio", "Ciprofloxacin", "Gentamicin", "Rifampicin"]
     var respiratoryAntibiotics = ["Amoxicillin", "Clarithromycin", "Vancomycin", "Co-amoxiclav", "Piperacillin/Tazobactam", "Gentamicin", "Teicoplanin", "Metronidazole", "Doxycycline"]
     var urinaryAntibiotics = ["Nitrofurantoin", "Trimethoprim", "Cefalexin", "Gentamicin", "Cefuroxime", "Amoxicillin", "Metronidazole", "Teicoplanin", "Piperacillin/Tazobactam", "Ciprofloxacin", "Vancomycin", "Meropenem"]
     var gastroAntibiotics = ["Amoxicillin", "Gentamicin", "Metronidazole", "Co-amoxiclav", "Piperacillin/Tazobactam", "Ciprofloxacin", "Teicoplanin", "Vancomycin", "Meropenem"]

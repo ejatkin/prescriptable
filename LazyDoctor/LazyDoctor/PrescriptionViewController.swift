@@ -26,18 +26,37 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cnsAntibiotics = prescription.cnsAntibiotics
-        respiratoryAntibiotics = prescription.respiratoryAntibiotics
-        urinaryAntibiotics = prescription.urinaryAntibiotics
-        gastroAntibiotics = prescription.gastroAntibiotics
-        skinAndSoftTissueAntibiotics = prescription.skinAndSoftTissueAntibiotics
-        boneAndJointAntibiotics  = prescription.boneAndJointAntibiotics
-        obgynAntibiotics = prescription.obgynAntibiotics
-        genitalAntibiotics = prescription.genitalAntibiotics
-        entAntibiotics = prescription.entAntibiotics
-        cardioAntibiotics = prescription.cardioAntibiotics
+//        cnsAntibiotics = prescription.cnsAntibiotics
+//        respiratoryAntibiotics = prescription.respiratoryAntibiotics
+//        urinaryAntibiotics = prescription.urinaryAntibiotics
+//        gastroAntibiotics = prescription.gastroAntibiotics
+//        skinAndSoftTissueAntibiotics = prescription.skinAndSoftTissueAntibiotics
+//        boneAndJointAntibiotics  = prescription.boneAndJointAntibiotics
+//        obgynAntibiotics = prescription.obgynAntibiotics
+//        genitalAntibiotics = prescription.genitalAntibiotics
+//        entAntibiotics = prescription.entAntibiotics
+//        cardioAntibiotics = prescription.cardioAntibiotics
+//
 
-
+            getAllAntibiotics()
+    }
+    
+    func getAllAntibiotics() -> Antibiotic {
+        
+//        var antibiotics = [Antibiotic]
+        
+        var amoxicillin = Antibiotic(name: "Amoxicillin", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "2g every 4 hours", isForPregnant: false, penicillinAllergenic: true)
+        let ceftriaxone = Antibiotic(name: "Ceftriaxone", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "2g every 12 hours", isForPregnant: false, penicillinAllergenic: true)
+        let chloramphenicol = Antibiotic(name: "Chloramphenicol", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "25mg every 6 hours", isForPregnant: false, penicillinAllergenic: false)
+        let aciclobio = Antibiotic(name: "Aciclobio", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "10mg per kg every 8 hours", isForPregnant: false, penicillinAllergenic: false)
+        let ciprofloxacin = Antibiotic(name: "Ciprofloxacin", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "500mg stat dose", isForPregnant: true, penicillinAllergenic: false)
+        let gentamicin = Antibiotic(name: "Gentamicin", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "Refer to microbiology", isForPregnant: true, penicillinAllergenic: false)
+        let rifampicin = Antibiotic(name: "Rifampicin", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "600mg daily", isForPregnant: false, penicillinAllergenic: false)
+        
+        let antibiotics = [amoxicillin = Antibiotic(name: "Amoxicillin", system: "Central Nervous System", severity: "Moderate", dosagePerKG: "2g every 4 hours", isForPregnant: false, penicillinAllergenic: true), ceftriaxone, chloramphenicol, aciclobio, ciprofloxacin, gentamicin, rifampicin] as [Any]
+        
+        return amoxicillin
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +66,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PrescriptionCell") as? PrescriptionTableViewCell
         let row = indexPath.row
+        
+        
+        
+        var antibiotic = getAllAntibiotics()
+//        if clinicalCondition?.system == antibiotic.system && clinicalCondition?.isPregnant == antibiotic.isForPregnant && clinicalCondition?.isPenicillin == antibiotic.penicillinAllergenic
         
         
         
