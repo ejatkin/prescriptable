@@ -19,7 +19,12 @@ class Antibiotic: NSObject {
     
     
     init(name: String, system: String, severity: String, dosagePerKG: String, isForPregnant: Bool, penicillinAllergenic: Bool){
-        
+        self.name = name
+        self.system = system
+        self.severity = severity
+        self.dosagePerKG = dosagePerKG
+        self.isForPregnant = isForPregnant
+        self.penicillinAllergenic = penicillinAllergenic
     }
     
 //    func getAllAntibiotics() -> Array<Any> {
