@@ -30,20 +30,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     var antibiotics = [Antibiotic]()
     var filteredArray = [Antibiotic]()
     
+    var selectedAntibiotic: Antibiotic? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        cnsAntibiotics = prescription.cnsAntibiotics
-        //        respiratoryAntibiotics = prescription.respiratoryAntibiotics
-        //        urinaryAntibiotics = prescription.urinaryAntibiotics
-        //        gastroAntibiotics = prescription.gastroAntibiotics
-        //        skinAndSoftTissueAntibiotics = prescription.skinAndSoftTissueAntibiotics
-        //        boneAndJointAntibiotics  = prescription.boneAndJointAntibiotics
-        //        obgynAntibiotics = prescription.obgynAntibiotics
-        //        genitalAntibiotics = prescription.genitalAntibiotics
-        //        entAntibiotics = prescription.entAntibiotics
-        //        cardioAntibiotics = prescription.cardioAntibiotics
-        //
-        
+
         getAllAntibiotics()
         filterAntibiotics()
     }
@@ -52,14 +43,14 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         
         
         
-        let amoxicillin = Antibiotic(name: "Amoxicillin", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (Listeria)", dosagePerKG: "2g every 4 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Allergic to Penicillin")
-        let ceftriaxone = Antibiotic(name: "Ceftriaxone", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (empirical treatment)", dosagePerKG: "2g every 12 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Allergic to Penicillin")
-        let chloramphenicol = Antibiotic(name: "Chloramphenicol", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (empirical treatment)", dosagePerKG: "25mg every 6 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin")
-        let aciclobio = Antibiotic(name: "Aciclobio", system: "Central Nervous System", typeOfInfection: "Moderate", dosagePerKG: "10mg per kg every 8 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin")
-        let ciprofloxacin = Antibiotic(name: "Ciprofloxacin", system: "Central Nervous System", typeOfInfection: "Meningococcal disease (prophylaxis)", dosagePerKG: "500mg stat dose", isForPregnant: "Pregnant", penicillinAllergenic: "Not Allergic to Penicillin")
-        let gentamicin = Antibiotic(name: "Gentamicin", system: "Central Nervous System", typeOfInfection: "Moderate", dosagePerKG: "Refer to microbiology", isForPregnant: "Pregnant", penicillinAllergenic: "Not Allergic to Penicillin")
-        let rifampicin = Antibiotic(name: "Rifampicin", system: "Central Nervous System", typeOfInfection: "Close contacts of Haemophilus influenza type B", dosagePerKG: "600mg daily", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin")
-        let aciclovir = Antibiotic(name: "Aciclovir", system: "Central Nervous System", typeOfInfection: "Encephalitis", dosagePerKG: "10mg/kg every 8 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin")
+        let amoxicillin = Antibiotic(name: "Amoxicillin", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (Listeria)", dosagePerKG: "2g every 4 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Allergic to Penicillin", antibioticDescription: "Clinicians to notify all suspected cases to Public Health England, Health Protection Team (Telephone: 020 3764 0804).")
+        let ceftriaxone = Antibiotic(name: "Ceftriaxone", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (empirical treatment)", dosagePerKG: "2g every 12 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Allergic to Penicillin", antibioticDescription: "If patient is > 50 years old or immunocom- promised, add Amoxicillin IV 2g every 6 hours to cover for Listeria. Clinicians to notify all suspected cases to Public Health England, Health Protection Team (Telephone: 020 3764 0804).")
+        let chloramphenicol = Antibiotic(name: "Chloramphenicol", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (empirical treatment)", dosagePerKG: "25mg every 6 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "If Listeriosis suspected (immunocompro- mised patients or elderly) contact Microbiology consultant for treatment advice. Clinicians to notify all suspected cases to Public Health England, Health Protection Team (Telephone: 020 3764 0804).")
+        let aciclobio = Antibiotic(name: "Aciclobio", system: "Central Nervous System", typeOfInfection: "Moderate", dosagePerKG: "10mg per kg every 8 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "")
+        let ciprofloxacin = Antibiotic(name: "Ciprofloxacin", system: "Central Nervous System", typeOfInfection: "Meningococcal disease (prophylaxis)", dosagePerKG: "500mg stat dose", isForPregnant: "Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "Notify Public Health England, Health Protection Team for contact tracing and prophylaxis")
+        let gentamicin = Antibiotic(name: "Gentamicin", system: "Central Nervous System", typeOfInfection: "Moderate", dosagePerKG: "Refer to microbiology", isForPregnant: "Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "Discuss course length of Gentamicin with a Consultant Microbiologist")
+        let rifampicin = Antibiotic(name: "Rifampicin", system: "Central Nervous System", typeOfInfection: "Close contacts of Haemophilus influenza type B", dosagePerKG: "600mg daily", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "Notify Public Health England, Health Protection Team for contact tracing and prophylaxis Ensure Hib vaccination up-to-date")
+        let aciclovir = Antibiotic(name: "Aciclovir", system: "Central Nervous System", typeOfInfection: "Encephalitis", dosagePerKG: "10mg/kg every 8 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "Dose should be based on ideal body weight for height and renal function. Advised maximum dose 900mg every 8 hours")
         
         antibiotics = [amoxicillin, ceftriaxone, chloramphenicol, aciclobio, ciprofloxacin, gentamicin, rifampicin, aciclovir]
         
@@ -75,9 +66,22 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "PrescriptionCell") as? PrescriptionTableViewCell
         let row = indexPath.row
         cell?.prescriptionLabel.text = filteredArray[row].name
-
-       
+        
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow
+        selectedAntibiotic = filteredArray[(indexPath?.row)!]
+        performSegue(withIdentifier: "showAntibioticDescriptionSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showAntibioticDescriptionSegue") {
+            let antibioticDescriptionViewController = segue.destination as! AntibioticDescriptionViewController
+            antibioticDescriptionViewController.selectedAntibiotic = selectedAntibiotic 
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
