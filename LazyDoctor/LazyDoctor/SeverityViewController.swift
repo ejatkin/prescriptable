@@ -10,7 +10,7 @@ import UIKit
 
 class SeverityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let severity = Severity().severityArray
+    let typeOfInfection = TypeOfInfection().CNSArray
     var clinicalCondition: ClinicalCondition? = nil
 
     var edit: Bool = false
@@ -24,20 +24,20 @@ class SeverityViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return severity.count
+        return CNSArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SeverityCell") as? SeverityTableViewCell
         let row = indexPath.row
-        cell?.severityLabel.text = severity[row]
+        cell?.severityLabel.text = typeOfInfection[row]
         
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-        clinicalCondition?.severity = severity[indexPath!.row]
+        clinicalCondition?.typeOfInfection = typeOfInfection[indexPath!.row]
         if edit {
             _ = navigationController?.popViewController(animated: true)
         } else {
@@ -47,8 +47,8 @@ class SeverityViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showWeight") {
-            let weightViewController = segue.destination as! WeightViewController
-            weightViewController.clinicalCondition = clinicalCondition
+            let typeOfInfectionViewController = segue.destination as! TypeOfInfectionViewController
+            typeOfInfectionViewController.clinicalCondition = clinicalCondition
         }
     }
     

@@ -14,7 +14,8 @@ class ConfirmationViewController: UIViewController {
     
     @IBOutlet weak var systemButton: UIButton!
     
-    @IBOutlet weak var weightButton: UIButton!
+    @IBOutlet weak var typeOfInfectionButton: UIButton!
+    
     @IBOutlet weak var severityButton: UIButton!
     
     @IBOutlet weak var isChildButton: UIButton!
@@ -39,8 +40,7 @@ class ConfirmationViewController: UIViewController {
     
     func setButton() {
         systemButton.setTitle(clinicalCondition?.system, for: .normal)
-        weightButton.setTitle(clinicalCondition?.weight, for: .normal)
-        severityButton.setTitle(clinicalCondition?.severity, for: .normal)
+        typeOfInfectionButton.setTitle(clinicalCondition?.typeOfInfection, for: .normal)
         isChildButton.setTitle(clinicalCondition?.isChild, for: .normal)
         isPregnantButton.setTitle(clinicalCondition?.isPregnant, for: .normal)
         allergyButton.setTitle(clinicalCondition?.isPenicillin, for: .normal)
@@ -55,13 +55,9 @@ class ConfirmationViewController: UIViewController {
         if let systemsViewController = segue.destination as? SystemsOfTheBodyViewController {
             systemsViewController.edit = true
             systemsViewController.clinicalCondition = clinicalCondition
-        } else if let severityViewController  = segue.destination as? SeverityViewController {
-            severityViewController.edit = true
-            severityViewController.clinicalCondition = clinicalCondition
-
-        } else if let weightViewController = segue.destination as? WeightViewController {
-            weightViewController.edit = true
-            weightViewController.clinicalCondition = clinicalCondition
+        } else if let typeOfInfectionViewController = segue.destination as? TypeOfInfectionViewController {
+            typeOfInfectionViewController.edit = true
+            typeOfInfectionViewController.clinicalCondition = clinicalCondition
 
         } else if let childViewController = segue.destination as? ChildOrAdultViewController {
             childViewController.edit = true

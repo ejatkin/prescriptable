@@ -43,14 +43,14 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
         if edit {
             _ = navigationController?.popViewController(animated: true)
         } else {
-            performSegue(withIdentifier: "showSeverity", sender: self)
+            performSegue(withIdentifier: "showTypeOfInfection", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showSeverity") {
-            let severityViewController = segue.destination as! SeverityViewController
-            severityViewController.clinicalCondition = clinicalCondition
+        if (segue.identifier == "showTypeOfInfection") {
+            let typeOfInfectionViewController = segue.destination as! TypeOfInfectionViewController
+            typeOfInfectionViewController.clinicalCondition = clinicalCondition
             
         }
     }
