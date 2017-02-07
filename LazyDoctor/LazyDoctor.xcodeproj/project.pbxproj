@@ -14,6 +14,9 @@
 		37CAE6CF1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */; };
 		37CAE6D11E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */; };
 		37CAE6D31E42327800DA4E33 /* TypeOfInfection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */; };
+		5129D6A31E4A37AF00A96E16 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5129D6A01E4A37AF00A96E16 /* Oswald-Bold.ttf */; };
+		5129D6A41E4A37AF00A96E16 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5129D6A11E4A37AF00A96E16 /* Oswald-Light.ttf */; };
+		5129D6A51E4A37AF00A96E16 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5129D6A21E4A37AF00A96E16 /* Oswald-Regular.ttf */; };
 		51AC17F61E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC17F51E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift */; };
 		51AC17F81E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC17F71E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift */; };
 		51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */; };
@@ -36,7 +39,6 @@
 		5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */; };
 		5F9668971E40DAC300CD66CA /* SystemsOfTheBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */; };
 		5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C981E42004600358724 /* ClinicalCondition.swift */; };
-		5FC50C9B1E42415000358724 /* ChildOrAdultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */; };
 		5FC50C9D1E42417A00358724 /* ChildOrAdultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */; };
 		5FC50C9F1E4241A000358724 /* ChildOrAdult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C9E1E4241A000358724 /* ChildOrAdult.swift */; };
 		5FC50CA11E48871800358724 /* Antibiotic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50CA01E48871800358724 /* Antibiotic.swift */; };
@@ -67,6 +69,9 @@
 		37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionViewController.swift; sourceTree = "<group>"; };
 		37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionTableViewCell.swift; sourceTree = "<group>"; };
 		37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfection.swift; sourceTree = "<group>"; };
+		5129D6A01E4A37AF00A96E16 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oswald-Bold.ttf"; path = "../../../../Downloads/Oswald/Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		5129D6A11E4A37AF00A96E16 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oswald-Light.ttf"; path = "../../../../Downloads/Oswald/Oswald-Light.ttf"; sourceTree = "<group>"; };
+		5129D6A21E4A37AF00A96E16 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oswald-Regular.ttf"; path = "../../../../Downloads/Oswald/Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		51AC17F51E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntibioticDescriptionViewController.swift; sourceTree = "<group>"; };
 		51AC17F71E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalPrescriptionViewController.swift; sourceTree = "<group>"; };
 		51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemOfTheBodyTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,7 +100,6 @@
 		5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyViewController.swift; sourceTree = "<group>"; };
 		5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTests.swift; sourceTree = "<group>"; };
 		5FC50C981E42004600358724 /* ClinicalCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicalCondition.swift; sourceTree = "<group>"; };
-		5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildOrAdultViewController.swift; sourceTree = "<group>"; };
 		5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildOrAdultTableViewCell.swift; sourceTree = "<group>"; };
 		5FC50C9E1E4241A000358724 /* ChildOrAdult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildOrAdult.swift; sourceTree = "<group>"; };
 		5FC50CA01E48871800358724 /* Antibiotic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Antibiotic.swift; sourceTree = "<group>"; };
@@ -126,6 +130,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5129D6A61E4A37BB00A96E16 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5129D6A01E4A37AF00A96E16 /* Oswald-Bold.ttf */,
+				5129D6A11E4A37AF00A96E16 /* Oswald-Light.ttf */,
+				5129D6A21E4A37AF00A96E16 /* Oswald-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		51CE37981E40EB6F00EA9902 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +162,6 @@
 			children = (
 				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
 				37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */,
-				5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */,
 				51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */,
 				51DCA6F51E43521100463EF9 /* AllergyViewController.swift */,
 				51DCA6FB1E4358F800463EF9 /* ConfirmationViewController.swift */,
@@ -180,6 +193,7 @@
 				5F96687A1E40CBB100CD66CA /* LazyDoctorTests */,
 				5F9668851E40CBB100CD66CA /* LazyDoctorUITests */,
 				5F9668611E40CBB100CD66CA /* Products */,
+				5129D6A61E4A37BB00A96E16 /* Fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,8 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				370F6DA01E44E35A00BA4E16 /* Main.storyboard in Resources */,
+				5129D6A51E4A37AF00A96E16 /* Oswald-Regular.ttf in Resources */,
+				5129D6A41E4A37AF00A96E16 /* Oswald-Light.ttf in Resources */,
 				5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */,
 				370F6D9E1E44E16100BA4E16 /* Assets.xcassets in Resources */,
+				5129D6A31E4A37AF00A96E16 /* Oswald-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +384,6 @@
 				51DCA6F01E424AB900463EF9 /* PregnantViewController.swift in Sources */,
 				51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */,
 				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
-				5FC50C9B1E42415000358724 /* ChildOrAdultViewController.swift in Sources */,
 				51DCA6F21E424BF700463EF9 /* Pregnant.swift in Sources */,
 				5FC50C9F1E4241A000358724 /* ChildOrAdult.swift in Sources */,
 				51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */,

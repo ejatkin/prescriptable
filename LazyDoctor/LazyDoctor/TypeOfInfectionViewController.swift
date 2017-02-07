@@ -42,14 +42,14 @@ class TypeOfInfectionViewController: UIViewController, UITableViewDataSource, UI
         if edit {
             _ = navigationController?.popViewController(animated: true)
         } else {
-            performSegue(withIdentifier: "ShowChildOrAdultSegue", sender: self)
+            performSegue(withIdentifier: "showPregnantSegue", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "ShowChildOrAdultSegue") {
-            let childOrAdultViewController = segue.destination as! ChildOrAdultViewController
-            childOrAdultViewController.clinicalCondition = clinicalCondition
+        if (segue.identifier == "showPregnantSegue") {
+            let pregnantViewController = segue.destination as! PregnantViewController
+            pregnantViewController.clinicalCondition = clinicalCondition
         }
     }
     
