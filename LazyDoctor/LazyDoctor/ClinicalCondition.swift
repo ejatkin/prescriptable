@@ -12,8 +12,7 @@ class ClinicalCondition {
     
     
         var system: String = ""
-        var severity: String = ""
-        var weight: String = ""
+        var typeOfInfection: String = ""
         var isChild: String = ""
         var isPregnant: String = ""
         var isPenicillin: String = ""

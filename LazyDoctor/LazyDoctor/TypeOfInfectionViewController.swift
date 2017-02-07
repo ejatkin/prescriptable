@@ -38,7 +38,7 @@ class TypeOfInfectionViewController: UIViewController, UITableViewDataSource, UI
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
-         clinicalCondition?.weight = typeOfInfection[indexPath!.row]
+         clinicalCondition?.typeOfInfection = typeOfInfection[indexPath!.row]
         if edit {
             _ = navigationController?.popViewController(animated: true)
         } else {

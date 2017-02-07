@@ -15,7 +15,6 @@
 		37CAE6D11E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */; };
 		37CAE6D31E42327800DA4E33 /* TypeOfInfection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */; };
 		51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */; };
-		51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE379D1E4206E800EA9902 /* SeverityViewController.swift */; };
 		51CE37A01E42075900EA9902 /* Severity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE379F1E42075900EA9902 /* Severity.swift */; };
 		51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */; };
 		51DCA6EE1E424AA500463EF9 /* PregnantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */; };
@@ -67,7 +66,6 @@
 		37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionTableViewCell.swift; sourceTree = "<group>"; };
 		37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfection.swift; sourceTree = "<group>"; };
 		51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemOfTheBodyTableViewCell.swift; sourceTree = "<group>"; };
-		51CE379D1E4206E800EA9902 /* SeverityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityViewController.swift; sourceTree = "<group>"; };
 		51CE379F1E42075900EA9902 /* Severity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Severity.swift; sourceTree = "<group>"; };
 		51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityTableViewCell.swift; sourceTree = "<group>"; };
 		51DCA6ED1E424AA500463EF9 /* PregnantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PregnantTableViewCell.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
-				51CE379D1E4206E800EA9902 /* SeverityViewController.swift */,
 				37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */,
 				5FC50C9A1E42415000358724 /* ChildOrAdultViewController.swift */,
 				51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */,
@@ -376,7 +373,6 @@
 				51CE37A01E42075900EA9902 /* Severity.swift in Sources */,
 				5FC50CA11E48871800358724 /* Antibiotic.swift in Sources */,
 				51DCA7021E43955400463EF9 /* Prescription.swift in Sources */,
-				51CE379E1E4206E800EA9902 /* SeverityViewController.swift in Sources */,
 				51DCA6F61E43521100463EF9 /* AllergyViewController.swift in Sources */,
 				51DCA6FE1E43948F00463EF9 /* PrescriptionViewController.swift in Sources */,
 				5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */,
