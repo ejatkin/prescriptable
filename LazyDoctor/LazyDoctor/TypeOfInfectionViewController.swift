@@ -57,5 +57,9 @@ class TypeOfInfectionViewController: UIViewController, UITableViewDataSource, UI
         cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75.0
+    }
+    
     
 }
