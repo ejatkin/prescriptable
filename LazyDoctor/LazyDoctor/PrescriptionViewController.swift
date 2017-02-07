@@ -30,20 +30,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     var antibiotics = [Antibiotic]()
     var filteredArray = [Antibiotic]()
     
+    var selectedAntibiotic: Antibiotic? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        cnsAntibiotics = prescription.cnsAntibiotics
-        //        respiratoryAntibiotics = prescription.respiratoryAntibiotics
-        //        urinaryAntibiotics = prescription.urinaryAntibiotics
-        //        gastroAntibiotics = prescription.gastroAntibiotics
-        //        skinAndSoftTissueAntibiotics = prescription.skinAndSoftTissueAntibiotics
-        //        boneAndJointAntibiotics  = prescription.boneAndJointAntibiotics
-        //        obgynAntibiotics = prescription.obgynAntibiotics
-        //        genitalAntibiotics = prescription.genitalAntibiotics
-        //        entAntibiotics = prescription.entAntibiotics
-        //        cardioAntibiotics = prescription.cardioAntibiotics
-        //
-        
+
         getAllAntibiotics()
         filterAntibiotics()
     }
@@ -75,9 +66,22 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "PrescriptionCell") as? PrescriptionTableViewCell
         let row = indexPath.row
         cell?.prescriptionLabel.text = filteredArray[row].name
-
-       
+        
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath = tableView.indexPathForSelectedRow
+        selectedAntibiotic = filteredArray[(indexPath?.row)!]
+        performSegue(withIdentifier: "showAntibioticDescriptionSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showAntibioticDescriptionSegue") {
+            let antibioticDescriptionViewController = segue.destination as! AntibioticDescriptionViewController
+            antibioticDescriptionViewController.selectedAntibiotic = selectedAntibiotic 
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

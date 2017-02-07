@@ -14,6 +14,8 @@
 		37CAE6CF1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */; };
 		37CAE6D11E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */; };
 		37CAE6D31E42327800DA4E33 /* TypeOfInfection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */; };
+		51AC17F61E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC17F51E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift */; };
+		51AC17F81E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC17F71E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift */; };
 		51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */; };
 		51CE37A01E42075900EA9902 /* Severity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE379F1E42075900EA9902 /* Severity.swift */; };
 		51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */; };
@@ -65,6 +67,8 @@
 		37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionViewController.swift; sourceTree = "<group>"; };
 		37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionTableViewCell.swift; sourceTree = "<group>"; };
 		37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfection.swift; sourceTree = "<group>"; };
+		51AC17F51E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntibioticDescriptionViewController.swift; sourceTree = "<group>"; };
+		51AC17F71E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalPrescriptionViewController.swift; sourceTree = "<group>"; };
 		51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemOfTheBodyTableViewCell.swift; sourceTree = "<group>"; };
 		51CE379F1E42075900EA9902 /* Severity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Severity.swift; sourceTree = "<group>"; };
 		51CE37A11E42080400EA9902 /* SeverityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeverityTableViewCell.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				51DCA6F51E43521100463EF9 /* AllergyViewController.swift */,
 				51DCA6FB1E4358F800463EF9 /* ConfirmationViewController.swift */,
 				51DCA6FD1E43948F00463EF9 /* PrescriptionViewController.swift */,
+				51AC17F51E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift */,
+				51AC17F71E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -369,10 +375,12 @@
 				51DCA6EE1E424AA500463EF9 /* PregnantTableViewCell.swift in Sources */,
 				37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */,
 				51DCA7001E4394A200463EF9 /* PrescriptionTableViewCell.swift in Sources */,
+				51AC17F81E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift in Sources */,
 				51DCA6F81E43523400463EF9 /* AllergyTableViewCell.swift in Sources */,
 				51CE37A01E42075900EA9902 /* Severity.swift in Sources */,
 				5FC50CA11E48871800358724 /* Antibiotic.swift in Sources */,
 				51DCA7021E43955400463EF9 /* Prescription.swift in Sources */,
+				51AC17F61E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift in Sources */,
 				51DCA6F61E43521100463EF9 /* AllergyViewController.swift in Sources */,
 				51DCA6FE1E43948F00463EF9 /* PrescriptionViewController.swift in Sources */,
 				5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */,
