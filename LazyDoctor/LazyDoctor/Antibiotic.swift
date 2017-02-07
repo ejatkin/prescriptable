@@ -16,15 +16,17 @@ class Antibiotic {
     var dosagePerKG: String = ""
     var isForPregnant: String = ""
     var penicillinAllergenic: String = ""
+    var antibioticDescription: String = ""
     
     
-    init(name: String, system: String, typeOfInfection: String, dosagePerKG: String, isForPregnant: String, penicillinAllergenic: String){
+    init(name: String, system: String, typeOfInfection: String, dosagePerKG: String, isForPregnant: String, penicillinAllergenic: String, antibioticDescription: String ){
         self.name = name
         self.system = system
         self.typeOfInfection = typeOfInfection
         self.dosagePerKG = dosagePerKG
         self.isForPregnant = isForPregnant
         self.penicillinAllergenic = penicillinAllergenic
+        self.antibioticDescription = antibioticDescription
     }
 }
 
