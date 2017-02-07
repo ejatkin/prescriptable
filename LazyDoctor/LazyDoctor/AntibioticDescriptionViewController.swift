@@ -25,6 +25,10 @@ class AntibioticDescriptionViewController: UIViewController {
         
         antibioticNameLabel.text = selectedAntibiotic?.name
         
+        antibioticDescriptionText.text = selectedAntibiotic?.antibioticDescription
+        
+        dosageInformationText.text = selectedAntibiotic?.dosagePerKG
+        
 
 
     }
