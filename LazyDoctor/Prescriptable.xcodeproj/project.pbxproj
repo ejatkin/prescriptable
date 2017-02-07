@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		370F6D9E1E44E16100BA4E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370F6D9D1E44E16100BA4E16 /* Assets.xcassets */; };
 		370F6DA01E44E35A00BA4E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370F6D9F1E44E35A00BA4E16 /* Main.storyboard */; };
+		371C9A761E4A42A9008322B0 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 371C9A731E4A42A9008322B0 /* Oswald-Bold.ttf */; };
+		371C9A771E4A42A9008322B0 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 371C9A741E4A42A9008322B0 /* Oswald-Light.ttf */; };
+		371C9A781E4A42A9008322B0 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 371C9A751E4A42A9008322B0 /* Oswald-Regular.ttf */; };
 		37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */; };
 		37B067421E40DF490056BE6B /* SystemsOfTheBodyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */; };
 		37CAE6CF1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */; };
 		37CAE6D11E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */; };
 		37CAE6D31E42327800DA4E33 /* TypeOfInfection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */; };
-		5129D6A31E4A37AF00A96E16 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5129D6A01E4A37AF00A96E16 /* Oswald-Bold.ttf */; };
-		5129D6A41E4A37AF00A96E16 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5129D6A11E4A37AF00A96E16 /* Oswald-Light.ttf */; };
-		5129D6A51E4A37AF00A96E16 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5129D6A21E4A37AF00A96E16 /* Oswald-Regular.ttf */; };
 		51AC17F61E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC17F51E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift */; };
 		51AC17F81E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AC17F71E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift */; };
 		51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */; };
@@ -64,14 +64,14 @@
 /* Begin PBXFileReference section */
 		370F6D9D1E44E16100BA4E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370F6D9F1E44E35A00BA4E16 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		371C9A731E4A42A9008322B0 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		371C9A741E4A42A9008322B0 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		371C9A751E4A42A9008322B0 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBody.swift; sourceTree = "<group>"; };
 		37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTest.swift; sourceTree = "<group>"; };
 		37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionViewController.swift; sourceTree = "<group>"; };
 		37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionTableViewCell.swift; sourceTree = "<group>"; };
 		37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfection.swift; sourceTree = "<group>"; };
-		5129D6A01E4A37AF00A96E16 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oswald-Bold.ttf"; path = "../../../../Downloads/Oswald/Oswald-Bold.ttf"; sourceTree = "<group>"; };
-		5129D6A11E4A37AF00A96E16 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oswald-Light.ttf"; path = "../../../../Downloads/Oswald/Oswald-Light.ttf"; sourceTree = "<group>"; };
-		5129D6A21E4A37AF00A96E16 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oswald-Regular.ttf"; path = "../../../../Downloads/Oswald/Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		51AC17F51E49DEB200E1EEC8 /* AntibioticDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntibioticDescriptionViewController.swift; sourceTree = "<group>"; };
 		51AC17F71E49E38E00E1EEC8 /* FinalPrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalPrescriptionViewController.swift; sourceTree = "<group>"; };
 		51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemOfTheBodyTableViewCell.swift; sourceTree = "<group>"; };
@@ -87,14 +87,14 @@
 		51DCA6FD1E43948F00463EF9 /* PrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
 		51DCA6FF1E4394A200463EF9 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		51DCA7011E43955400463EF9 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
-		5F9668601E40CBB100CD66CA /* LazyDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9668601E40CBB100CD66CA /* Prescriptable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prescriptable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668631E40CBB100CD66CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9668701E40CBB100CD66CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F9668721E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F9668771E40CBB100CD66CA /* LazyDoctorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyDoctorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9668771E40CBB100CD66CA /* PrescriptableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrescriptableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDoctorTests.swift; sourceTree = "<group>"; };
 		5F96687D1E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F9668821E40CBB100CD66CA /* LazyDoctorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyDoctorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9668821E40CBB100CD66CA /* PrescriptableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrescriptableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668861E40CBB100CD66CA /* LazyDoctorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDoctorUITests.swift; sourceTree = "<group>"; };
 		5F9668881E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyViewController.swift; sourceTree = "<group>"; };
@@ -133,9 +133,9 @@
 		5129D6A61E4A37BB00A96E16 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5129D6A01E4A37AF00A96E16 /* Oswald-Bold.ttf */,
-				5129D6A11E4A37AF00A96E16 /* Oswald-Light.ttf */,
-				5129D6A21E4A37AF00A96E16 /* Oswald-Regular.ttf */,
+				371C9A731E4A42A9008322B0 /* Oswald-Bold.ttf */,
+				371C9A741E4A42A9008322B0 /* Oswald-Light.ttf */,
+				371C9A751E4A42A9008322B0 /* Oswald-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 		5F9668611E40CBB100CD66CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F9668601E40CBB100CD66CA /* LazyDoctor.app */,
-				5F9668771E40CBB100CD66CA /* LazyDoctorTests.xctest */,
-				5F9668821E40CBB100CD66CA /* LazyDoctorUITests.xctest */,
+				5F9668601E40CBB100CD66CA /* Prescriptable.app */,
+				5F9668771E40CBB100CD66CA /* PrescriptableTests.xctest */,
+				5F9668821E40CBB100CD66CA /* PrescriptableUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,9 +244,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F96685F1E40CBB100CD66CA /* LazyDoctor */ = {
+		5F96685F1E40CBB100CD66CA /* Prescriptable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F96688B1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctor" */;
+			buildConfigurationList = 5F96688B1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "Prescriptable" */;
 			buildPhases = (
 				5F96685C1E40CBB100CD66CA /* Sources */,
 				5F96685D1E40CBB100CD66CA /* Frameworks */,
@@ -256,14 +256,14 @@
 			);
 			dependencies = (
 			);
-			name = LazyDoctor;
+			name = Prescriptable;
 			productName = LazyDoctor;
-			productReference = 5F9668601E40CBB100CD66CA /* LazyDoctor.app */;
+			productReference = 5F9668601E40CBB100CD66CA /* Prescriptable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F9668761E40CBB100CD66CA /* LazyDoctorTests */ = {
+		5F9668761E40CBB100CD66CA /* PrescriptableTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F96688E1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorTests" */;
+			buildConfigurationList = 5F96688E1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "PrescriptableTests" */;
 			buildPhases = (
 				5F9668731E40CBB100CD66CA /* Sources */,
 				5F9668741E40CBB100CD66CA /* Frameworks */,
@@ -274,14 +274,14 @@
 			dependencies = (
 				5F9668791E40CBB100CD66CA /* PBXTargetDependency */,
 			);
-			name = LazyDoctorTests;
+			name = PrescriptableTests;
 			productName = LazyDoctorTests;
-			productReference = 5F9668771E40CBB100CD66CA /* LazyDoctorTests.xctest */;
+			productReference = 5F9668771E40CBB100CD66CA /* PrescriptableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5F9668811E40CBB100CD66CA /* LazyDoctorUITests */ = {
+		5F9668811E40CBB100CD66CA /* PrescriptableUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F9668911E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorUITests" */;
+			buildConfigurationList = 5F9668911E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "PrescriptableUITests" */;
 			buildPhases = (
 				5F96687E1E40CBB100CD66CA /* Sources */,
 				5F96687F1E40CBB100CD66CA /* Frameworks */,
@@ -292,9 +292,9 @@
 			dependencies = (
 				5F9668841E40CBB100CD66CA /* PBXTargetDependency */,
 			);
-			name = LazyDoctorUITests;
+			name = PrescriptableUITests;
 			productName = LazyDoctorUITests;
-			productReference = 5F9668821E40CBB100CD66CA /* LazyDoctorUITests.xctest */;
+			productReference = 5F9668821E40CBB100CD66CA /* PrescriptableUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -324,7 +324,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F96685B1E40CBB100CD66CA /* Build configuration list for PBXProject "LazyDoctor" */;
+			buildConfigurationList = 5F96685B1E40CBB100CD66CA /* Build configuration list for PBXProject "Prescriptable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -337,9 +337,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F96685F1E40CBB100CD66CA /* LazyDoctor */,
-				5F9668761E40CBB100CD66CA /* LazyDoctorTests */,
-				5F9668811E40CBB100CD66CA /* LazyDoctorUITests */,
+				5F96685F1E40CBB100CD66CA /* Prescriptable */,
+				5F9668761E40CBB100CD66CA /* PrescriptableTests */,
+				5F9668811E40CBB100CD66CA /* PrescriptableUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -350,11 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				370F6DA01E44E35A00BA4E16 /* Main.storyboard in Resources */,
-				5129D6A51E4A37AF00A96E16 /* Oswald-Regular.ttf in Resources */,
-				5129D6A41E4A37AF00A96E16 /* Oswald-Light.ttf in Resources */,
+				371C9A781E4A42A9008322B0 /* Oswald-Regular.ttf in Resources */,
+				371C9A771E4A42A9008322B0 /* Oswald-Light.ttf in Resources */,
 				5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */,
 				370F6D9E1E44E16100BA4E16 /* Assets.xcassets in Resources */,
-				5129D6A31E4A37AF00A96E16 /* Oswald-Bold.ttf in Resources */,
+				371C9A761E4A42A9008322B0 /* Oswald-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +430,12 @@
 /* Begin PBXTargetDependency section */
 		5F9668791E40CBB100CD66CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F96685F1E40CBB100CD66CA /* LazyDoctor */;
+			target = 5F96685F1E40CBB100CD66CA /* Prescriptable */;
 			targetProxy = 5F9668781E40CBB100CD66CA /* PBXContainerItemProxy */;
 		};
 		5F9668841E40CBB100CD66CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5F96685F1E40CBB100CD66CA /* LazyDoctor */;
+			target = 5F96685F1E40CBB100CD66CA /* Prescriptable */;
 			targetProxy = 5F9668831E40CBB100CD66CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -552,7 +552,7 @@
 				DEVELOPMENT_TEAM = 446A4QVW5H;
 				INFOPLIST_FILE = LazyDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctor;
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.Prescriptable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -565,7 +565,7 @@
 				DEVELOPMENT_TEAM = 446A4QVW5H;
 				INFOPLIST_FILE = LazyDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctor;
+				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.Prescriptable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -581,7 +581,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyDoctor.app/LazyDoctor";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prescriptable.app/Prescriptable";
 			};
 			name = Debug;
 		};
@@ -595,7 +595,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MakersFinalProject.LazyDoctorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyDoctor.app/LazyDoctor";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prescriptable.app/Prescriptable";
 			};
 			name = Release;
 		};
@@ -628,7 +628,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F96685B1E40CBB100CD66CA /* Build configuration list for PBXProject "LazyDoctor" */ = {
+		5F96685B1E40CBB100CD66CA /* Build configuration list for PBXProject "Prescriptable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F9668891E40CBB100CD66CA /* Debug */,
@@ -637,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F96688B1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctor" */ = {
+		5F96688B1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "Prescriptable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F96688C1E40CBB100CD66CA /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F96688E1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorTests" */ = {
+		5F96688E1E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "PrescriptableTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F96688F1E40CBB100CD66CA /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F9668911E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "LazyDoctorUITests" */ = {
+		5F9668911E40CBB100CD66CA /* Build configuration list for PBXNativeTarget "PrescriptableUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F9668921E40CBB100CD66CA /* Debug */,
