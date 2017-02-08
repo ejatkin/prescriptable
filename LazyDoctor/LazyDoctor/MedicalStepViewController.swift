@@ -17,6 +17,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case InfectionType
         case Pregnant
         case Allergy
+        case Confirmation
     }
     
     var step: Step = .System
@@ -51,11 +52,13 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let indexPath = medicalStepTableView.indexPathForSelectedRow
         switch step {
-        case .System: clinicalCondition?.system = stepData[indexPath.row]
-        case .InfectionType: clinicalCondition?.typeOfInfection = stepData[indexPath.row]
-        case .Pregnant: clinicalCondition?.isPregnant = stepData[indexPath.row]
-        case .Allergy: clinicalCondition?.isPenicillin = stepData[indexPath.row]
+        case .System: clinicalCondition?.system = stepData[(indexPath?.row)!]
+        case .InfectionType: clinicalCondition?.typeOfInfection = stepData[(indexPath?.row)!]
+        case .Pregnant: clinicalCondition?.isPregnant = stepData[(indexPath?.row)!]
+        case .Allergy: clinicalCondition?.isPenicillin = stepData[(indexPath?.row)!]
+        default: break
         }
         if let newStep = Step(rawValue: step.rawValue + 1) {
             step = newStep
@@ -63,6 +66,9 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         } else {
         performSegue(withIdentifier: "ConfirmationSegue", sender: self)
         }
+        
+       
+
     }
     
     func updateStepData() {
@@ -71,6 +77,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case .InfectionType: stepData = TypeOfInfection().CNSArray
         case .Pregnant: stepData = Pregnant().pregnantArray
         case .Allergy: stepData = Allergy().allergyArray
+        case .Confirmation: stepData = (clinicalCondition?.toArray())!
         }
         medicalStepTableView.reloadData()
     }

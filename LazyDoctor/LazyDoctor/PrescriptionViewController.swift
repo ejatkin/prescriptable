@@ -13,7 +13,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var dosageLabel: UILabel!
     @IBOutlet weak var commentsTextView: UITextView!
     
-    var clinicalCondition: ClinicalCondition? = nil
+    var clinicalCondition: ClinicalCondition?
     
     var prescription = Prescription()
     var cnsAntibiotics: [String]!

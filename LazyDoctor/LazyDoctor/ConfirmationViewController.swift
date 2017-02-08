@@ -37,14 +37,8 @@ class ConfirmationViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "PrescriptionViewController") {
             let prescriptionViewController = segue.destination as! PrescriptionViewController
             prescriptionViewController.clinicalCondition = clinicalCondition
-        }
-        if let systemsViewController = segue.destination as? MedicalStepViewController {
-            systemsViewController.edit = true
-            systemsViewController.clinicalCondition = clinicalCondition
-        }
         
     }
 }
