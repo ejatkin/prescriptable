@@ -10,7 +10,9 @@ import UIKit
 
 class MedicalStepViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    let prescription = Prescription()
     
+    @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var medicalStepTableView: UITableView!
     enum Step: Int {
         case System = 1
@@ -29,6 +31,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        confirmButton.isHidden = true
         clinicalCondition = ClinicalCondition()
         step = .System
         updateStepData()
@@ -64,7 +67,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
             step = newStep
             updateStepData()
         } else {
-        performSegue(withIdentifier: "ConfirmationSegue", sender: self)
+        performSegue(withIdentifier: "PrescriptionSegue", sender: self)
         }
         
        
@@ -78,17 +81,14 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case .Pregnant: stepData = Pregnant().pregnantArray
         case .Allergy: stepData = Allergy().allergyArray
         case .Confirmation: stepData = (clinicalCondition?.toArray())!
+            confirmButton.isHidden = false
         }
         medicalStepTableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let confirmationViewController = segue.destination as! ConfirmationViewController
-            confirmationViewController.clinicalCondition = clinicalCondition
-    }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
+            let prescriptionViewController = segue.destination as! PrescriptionViewController
+            prescriptionViewController.clinicalCondition = clinicalCondition
     }
     
 }
