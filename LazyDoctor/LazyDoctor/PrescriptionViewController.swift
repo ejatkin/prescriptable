@@ -10,9 +10,13 @@ import UIKit
 
 class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var dosageLabel: UILabel!
     @IBOutlet weak var commentsTextView: UITextView!
+    @IBOutlet weak var emptyAntibioticLabel: UILabel!
+    @IBOutlet weak var dosageText: UITextView!
     
+    @IBOutlet weak var antibioticText: UITextView!
     var clinicalCondition: ClinicalCondition?
     
     var prescription = Prescription()
@@ -34,9 +38,19 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        emptyAntibioticLabel.isHidden = true
+        
         getAllAntibiotics()
         filterAntibiotics()
+        
+        if filteredArray.count == 1 {
+            selectedAntibiotic = filteredArray[0]
+            antibioticText.text = selectedAntibiotic?.antibioticDescription
+            dosageText.text = selectedAntibiotic?.dosagePerKG
+        } else if filteredArray.count == 0 {
+            antibioticText.text = "Consult with a Microbiologist"
+        }
     }
     
     func getAllAntibiotics() -> [Antibiotic] {
@@ -63,37 +77,40 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         let cell = tableView.dequeueReusableCell(withIdentifier: "PrescriptionCell") as? PrescriptionTableViewCell
         let row = indexPath.row
         cell?.prescriptionLabel.text = filteredArray[row].name
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+
         
         return cell!
+       
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let indexPath = tableView.indexPathForSelectedRow
+        if filteredArray.count > 1 {
         selectedAntibiotic = filteredArray[(indexPath?.row)!]
-        performSegue(withIdentifier: "showAntibioticDescriptionSegue", sender: self)
+        antibioticText.text = selectedAntibiotic?.antibioticDescription
+        dosageText.text = selectedAntibiotic?.dosagePerKG
+        }
+//        performSegue(withIdentifier: "showAntibioticDescriptionSegue", sender: self)
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showAntibioticDescriptionSegue") {
-            let antibioticDescriptionViewController = segue.destination as! AntibioticDescriptionViewController
-            antibioticDescriptionViewController.selectedAntibiotic = selectedAntibiotic 
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if (segue.identifier == "showAntibioticDescriptionSegue") {
+//            let antibioticDescriptionViewController = segue.destination as! AntibioticDescriptionViewController
+//            antibioticDescriptionViewController.selectedAntibiotic = selectedAntibiotic 
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredArray.count
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
-    }
     
     func filterAntibiotics() {
         filteredArray = antibiotics.filter { $0.system == clinicalCondition?.system && $0.typeOfInfection == clinicalCondition?.typeOfInfection }
         filterPregnant()
         filterPenicillin()
-    
     }
 
     func filterPregnant() {
