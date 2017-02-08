@@ -10,7 +10,7 @@ import UIKit
 
 class Allergy {
     
-    let allergyArray = ["Allergic to Penicillin", "Not Allergic to Penicillin"]
+    let allergyArray = ["Allergic to Penicillin", "Not Allergic to Penicillin"].sorted()
     
 
 }

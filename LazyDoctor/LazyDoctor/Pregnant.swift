@@ -10,6 +10,6 @@ import UIKit
 
 class Pregnant {
     
-    let pregnantArray = ["Pregnant", "Not Pregnant"]
+    let pregnantArray = ["Pregnant", "Not Pregnant"].sorted()
 
 }
