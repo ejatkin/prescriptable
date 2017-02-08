@@ -92,13 +92,21 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func filterAntibiotics() {
-        filteredArray = antibiotics.filter { $0.system == clinicalCondition?.system && $0.penicillinAllergenic == clinicalCondition?.isPenicillin && $0.typeOfInfection == clinicalCondition?.typeOfInfection }
+        filteredArray = antibiotics.filter { $0.system == clinicalCondition?.system && $0.typeOfInfection == clinicalCondition?.typeOfInfection }
         filterPregnant()
+        filterPenicillin()
+    
     }
 
     func filterPregnant() {
         if (clinicalCondition?.isPregnant == "Pregnant") {
             filteredArray = filteredArray.filter { $0.isForPregnant == clinicalCondition?.isPregnant }
+        }
+    }
+    
+    func filterPenicillin() {
+        if (clinicalCondition?.isPenicillin == "Allergic to Penicillin") {
+            filteredArray = filteredArray.filter { $0.penicillinAllergenic == clinicalCondition?.isPenicillin  }
         }
     }
 
