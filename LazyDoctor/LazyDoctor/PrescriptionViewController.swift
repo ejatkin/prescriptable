@@ -41,8 +41,6 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     func getAllAntibiotics() -> [Antibiotic] {
         
-        
-        
         let amoxicillin = Antibiotic(name: "Amoxicillin", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (pathogen identified)", dosagePerKG: "2g every 4 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Allergic to Penicillin", antibioticDescription: "Clinicians to notify all suspected cases to Public Health England, Health Protection Team (Telephone: 020 3764 0804).")
         let ceftriaxone = Antibiotic(name: "Ceftriaxone", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (empirical treatment)", dosagePerKG: "2g every 12 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Allergic to Penicillin", antibioticDescription: "If patient is > 50 years old or immunocom- promised, add Amoxicillin IV 2g every 6 hours to cover for Listeria. Clinicians to notify all suspected cases to Public Health England, Health Protection Team (Telephone: 020 3764 0804).")
         let chloramphenicol = Antibiotic(name: "Chloramphenicol", system: "Central Nervous System", typeOfInfection: "Bacterial Meningitis (empirical treatment)", dosagePerKG: "25mg every 6 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "If Listeriosis suspected (immunocompro- mised patients or elderly) contact Microbiology consultant for treatment advice. Clinicians to notify all suspected cases to Public Health England, Health Protection Team (Telephone: 020 3764 0804).")
