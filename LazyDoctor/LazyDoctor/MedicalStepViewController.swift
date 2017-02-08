@@ -12,6 +12,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
     
     let prescription = Prescription()
     
+    @IBOutlet weak var conditionTitleLabel: UILabel!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var medicalStepTableView: UITableView!
     enum Step: Int {
@@ -79,11 +80,19 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
     func updateStepData() {
         switch step {
         case .System: stepData = SystemsOfTheBody().bodySystems
+            conditionTitleLabel.text = "System"
         case .InfectionType: stepData = TypeOfInfection().CNSArray
-//        tableView(medicalStepTableView, heightForRowAt: IndexPath) 
+        conditionTitleLabel.text = "Type of Infection"
+            medicalStepTableView.rowHeight = 60
+
         case .Pregnant: stepData = Pregnant().pregnantArray
+        conditionTitleLabel.text = "Pregnancy"
+
         case .Allergy: stepData = Allergy().allergyArray
+        conditionTitleLabel.text = "Allergy"
+
         case .Confirmation: stepData = (clinicalCondition?.toArray())!
+        conditionTitleLabel.text = "Confirm Data"
             confirmButton.isHidden = false
         }
         medicalStepTableView.reloadData()

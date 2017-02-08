@@ -89,16 +89,10 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         antibioticText.text = selectedAntibiotic?.antibioticDescription
         dosageText.text = selectedAntibiotic?.dosagePerKG
         }
-//        performSegue(withIdentifier: "showAntibioticDescriptionSegue", sender: self)
         
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if (segue.identifier == "showAntibioticDescriptionSegue") {
-//            let antibioticDescriptionViewController = segue.destination as! AntibioticDescriptionViewController
-//            antibioticDescriptionViewController.selectedAntibiotic = selectedAntibiotic 
-//        }
-//    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredArray.count
