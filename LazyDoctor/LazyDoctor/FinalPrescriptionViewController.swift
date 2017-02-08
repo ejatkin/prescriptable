@@ -22,7 +22,9 @@ class FinalPrescriptionViewController: UIViewController {
     @IBOutlet weak var durationOfTreatmentLabel: UILabel!
     @IBOutlet weak var numberOfTabletsLabel: UILabel!
     
+    @IBOutlet weak var shareButton: UIButton!
     
+    @IBOutlet weak var printButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,10 @@ class FinalPrescriptionViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    @IBAction func shareButton(_ sender: Any) {
+    }
+    @IBAction func printButton(_ sender: Any) {
     }
  
 

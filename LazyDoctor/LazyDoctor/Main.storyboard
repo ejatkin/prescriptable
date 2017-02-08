@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r78-aC-YvY">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r78-aC-YvY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -145,12 +145,6 @@
                                     <outlet property="delegate" destination="8Uc-fh-x7Z" id="rSK-ds-y3d"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consult a Microbiologist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxC-fm-bgZ">
-                                <rect key="frame" x="95" y="323" width="185" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-E4-Pe8">
                                 <rect key="frame" x="60" y="370" width="240" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -188,9 +182,7 @@
                             <constraint firstItem="cIA-Pj-Hnh" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" multiplier="1.7" id="UnI-2D-OWs"/>
                             <constraint firstItem="Krm-pQ-kuO" firstAttribute="centerX" secondItem="GWT-L8-f62" secondAttribute="centerX" id="XAQ-QL-YRl"/>
                             <constraint firstItem="Krm-pQ-kuO" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" multiplier="1.4" constant="21.100000000000023" id="cEJ-Ih-xyo"/>
-                            <constraint firstItem="hxC-fm-bgZ" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" id="hbY-vb-26b"/>
                             <constraint firstItem="pSA-Xg-963" firstAttribute="leading" secondItem="GWT-L8-f62" secondAttribute="leadingMargin" constant="44" id="mE3-us-bK8"/>
-                            <constraint firstItem="hxC-fm-bgZ" firstAttribute="centerX" secondItem="GWT-L8-f62" secondAttribute="centerX" id="tNN-aC-uot"/>
                             <constraint firstItem="cIA-Pj-Hnh" firstAttribute="centerX" secondItem="GWT-L8-f62" secondAttribute="centerX" multiplier="1.3" id="tSf-XY-bef"/>
                             <constraint firstItem="2gc-E4-Pe8" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" constant="78" id="xP0-51-z6U"/>
                         </constraints>
@@ -198,7 +190,6 @@
                     <connections>
                         <outlet property="antibioticText" destination="2gc-E4-Pe8" id="4fX-zq-cQe"/>
                         <outlet property="dosageText" destination="Krm-pQ-kuO" id="t6u-OC-eYh"/>
-                        <outlet property="emptyAntibioticLabel" destination="hxC-fm-bgZ" id="fNn-An-dIx"/>
                         <outlet property="tableView" destination="pSA-Xg-963" id="J53-WN-zhu"/>
                     </connections>
                 </viewController>
@@ -310,6 +301,9 @@
                                     <constraint firstAttribute="width" constant="25" id="VYy-1o-JxF"/>
                                 </constraints>
                                 <state key="normal" image="icon (11)"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="cUI-u2-Uzh" eventType="touchUpInside" id="ghu-Ti-35m"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKd-af-FJE">
                                 <rect key="frame" x="145" y="395" width="85" height="21"/>
@@ -324,6 +318,9 @@
                                     <constraint firstAttribute="height" constant="25" id="rUP-Ic-Z4b"/>
                                 </constraints>
                                 <state key="normal" image="icon (12)"/>
+                                <connections>
+                                    <action selector="printButton:" destination="cUI-u2-Uzh" eventType="touchUpInside" id="kkH-ux-1Cy"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qxe-sM-lkY">
                                 <rect key="frame" x="60" y="215" width="258" height="30"/>
@@ -379,6 +376,8 @@
                         <outlet property="numberOfTabletsLabel" destination="jp9-ai-HQ4" id="URO-AL-agp"/>
                         <outlet property="patiendDOBTextField" destination="QA3-20-CjK" id="akJ-QO-cyR"/>
                         <outlet property="patientNameTextField" destination="oY5-Lx-gDv" id="vWb-aW-hhi"/>
+                        <outlet property="printButton" destination="Hwj-9h-UN1" id="7a9-oA-LNd"/>
+                        <outlet property="shareButton" destination="HnZ-T3-4SP" id="D1I-8a-zca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xc6-tP-iuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
