@@ -17,6 +17,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case InfectionType
         case Pregnant
         case Allergy
+        case Confirmation
     }
     
     var step: Step = .System
@@ -57,6 +58,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case .InfectionType: clinicalCondition?.typeOfInfection = stepData[(indexPath?.row)!]
         case .Pregnant: clinicalCondition?.isPregnant = stepData[(indexPath?.row)!]
         case .Allergy: clinicalCondition?.isPenicillin = stepData[(indexPath?.row)!]
+        default: break
         }
         if let newStep = Step(rawValue: step.rawValue + 1) {
             step = newStep
@@ -75,6 +77,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case .InfectionType: stepData = TypeOfInfection().CNSArray
         case .Pregnant: stepData = Pregnant().pregnantArray
         case .Allergy: stepData = Allergy().allergyArray
+        case .Confirmation: stepData = (clinicalCondition?.toArray())!
         }
         medicalStepTableView.reloadData()
     }
