@@ -22,6 +22,7 @@ class FinalPrescriptionViewController: UIViewController {
     @IBOutlet weak var durationOfTreatmentLabel: UILabel!
     @IBOutlet weak var numberOfTabletsLabel: UILabel!
     
+    
     @IBOutlet weak var shareButton: UIButton!
     
     @IBOutlet weak var printButton: UIButton!
