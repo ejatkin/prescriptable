@@ -8,15 +8,29 @@
 
 import UIKit
 
-class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class MedicalStepViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    let bodySystems = SystemsOfTheBody().bodySystems
+    
+    @IBOutlet weak var medicalStepTableView: UITableView!
+    enum Step: Int {
+        case System = 1
+        case InfectionType
+        case Pregnant
+        case Allergy
+    }
+    
+    var step: Step = .System
+    var stepData: [String] = []
+    
+    
     var clinicalCondition: ClinicalCondition? = nil
     var edit: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         clinicalCondition = ClinicalCondition()
+        step = .System
+        updateStepData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,25 +40,39 @@ class SystemsOfTheBodyViewController: UIViewController, UITableViewDataSource, U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SystemOfTheBodyCell") as? SystemOfTheBodyTableViewCell
-        let row = indexPath.row
-        cell?.systemOfTheBodyTitleLabel.text = bodySystems[row]
+        cell?.textLabel?.text = stepData[indexPath.row]
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return bodySystems.count
+        return stepData.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let indexPath = tableView.indexPathForSelectedRow
-        clinicalCondition?.system = bodySystems[indexPath!.row]
-        if edit {
-            _ = navigationController?.popViewController(animated: true)
-        } else {
-            performSegue(withIdentifier: "showTypeOfInfection", sender: self)
+        switch step {
+        case .System: clinicalCondition?.system = stepData[indexPath.row]
+        case .InfectionType: clinicalCondition?.typeOfInfection = stepData[indexPath.row]
+        case .Pregnant: clinicalCondition?.isPregnant = stepData[indexPath.row]
+        case .Allergy: clinicalCondition?.isPenicillin = stepData[indexPath.row]
         }
+        if let newStep = Step(rawValue: step.rawValue + 1) {
+            step = newStep
+            updateStepData()
+        } else {
+        performSegue(withIdentifier: "PrescriptionSegue", sender: nil)
+        }
+    }
+    
+    func updateStepData() {
+        switch step {
+        case .System: stepData = SystemsOfTheBody().bodySystems
+        case .InfectionType: stepData = TypeOfInfection().CNSArray
+        case .Pregnant: stepData = Pregnant().pregnantArray
+        case .Allergy: stepData = Allergy().allergyArray
+        }
+        medicalStepTableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

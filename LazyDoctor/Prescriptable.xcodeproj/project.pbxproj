@@ -36,7 +36,7 @@
 		5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */; };
 		5F96687C1E40CBB100CD66CA /* LazyDoctorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96687B1E40CBB100CD66CA /* LazyDoctorTests.swift */; };
 		5F9668871E40CBB100CD66CA /* LazyDoctorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668861E40CBB100CD66CA /* LazyDoctorUITests.swift */; };
-		5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */; };
+		5F9668951E40DA9800CD66CA /* MedicalStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668941E40DA9800CD66CA /* MedicalStepViewController.swift */; };
 		5F9668971E40DAC300CD66CA /* SystemsOfTheBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */; };
 		5FC50C991E42004600358724 /* ClinicalCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C981E42004600358724 /* ClinicalCondition.swift */; };
 		5FC50C9D1E42417A00358724 /* ChildOrAdultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */; };
@@ -97,7 +97,7 @@
 		5F9668821E40CBB100CD66CA /* PrescriptableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrescriptableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9668861E40CBB100CD66CA /* LazyDoctorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyDoctorUITests.swift; sourceTree = "<group>"; };
 		5F9668881E40CBB100CD66CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyViewController.swift; sourceTree = "<group>"; };
+		5F9668941E40DA9800CD66CA /* MedicalStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalStepViewController.swift; sourceTree = "<group>"; };
 		5F9668961E40DAC300CD66CA /* SystemsOfTheBodyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTests.swift; sourceTree = "<group>"; };
 		5FC50C981E42004600358724 /* ClinicalCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicalCondition.swift; sourceTree = "<group>"; };
 		5FC50C9C1E42417A00358724 /* ChildOrAdultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildOrAdultTableViewCell.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		51DCA6F31E433BC400463EF9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F9668941E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift */,
+				5F9668941E40DA9800CD66CA /* MedicalStepViewController.swift */,
 				37CAE6CE1E4230AE00DA4E33 /* TypeOfInfectionViewController.swift */,
 				51DCA6EF1E424AB900463EF9 /* PregnantViewController.swift */,
 				51DCA6F51E43521100463EF9 /* AllergyViewController.swift */,
@@ -383,7 +383,7 @@
 				37CAE6D11E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift in Sources */,
 				51DCA6F01E424AB900463EF9 /* PregnantViewController.swift in Sources */,
 				51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */,
-				5F9668951E40DA9800CD66CA /* SystemsOfTheBodyViewController.swift in Sources */,
+				5F9668951E40DA9800CD66CA /* MedicalStepViewController.swift in Sources */,
 				51DCA6F21E424BF700463EF9 /* Pregnant.swift in Sources */,
 				5FC50C9F1E4241A000358724 /* ChildOrAdult.swift in Sources */,
 				51CE37A21E42080400EA9902 /* SeverityTableViewCell.swift in Sources */,

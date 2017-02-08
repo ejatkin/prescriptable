@@ -51,7 +51,7 @@ class ConfirmationViewController: UIViewController {
             let prescriptionViewController = segue.destination as! PrescriptionViewController
             prescriptionViewController.clinicalCondition = clinicalCondition
         }
-        if let systemsViewController = segue.destination as? SystemsOfTheBodyViewController {
+        if let systemsViewController = segue.destination as? MedicalStepViewController {
             systemsViewController.edit = true
             systemsViewController.clinicalCondition = clinicalCondition
         } else if let typeOfInfectionViewController = segue.destination as? TypeOfInfectionViewController {
