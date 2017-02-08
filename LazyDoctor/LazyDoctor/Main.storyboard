@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Oswald-Light.ttf">
+            <string>Oswald-Light</string>
+        </array>
         <array key="Oswald-Regular.ttf">
             <string>Oswald-Regular</string>
         </array>
@@ -44,21 +47,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="264" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lua-NT-6ST">
-                                                    <rect key="frame" x="132" y="25" width="0.0" height="0.0"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz4-fz-UE3" customClass="textLabel">
+                                                    <rect key="frame" x="111" y="14" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="17"/>
-                                                    <color key="textColor" red="0.43145307898521423" green="0.43144452571868896" blue="0.43145030736923218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="textColor" red="0.43145307900000002" green="0.43144452570000003" blue="0.43145030740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lua-NT-6ST" firstAttribute="centerY" secondItem="q17-aH-6P6" secondAttribute="centerY" id="M1h-Ay-Uih"/>
-                                                <constraint firstItem="lua-NT-6ST" firstAttribute="centerX" secondItem="q17-aH-6P6" secondAttribute="centerX" id="RY5-MW-QoV"/>
+                                                <constraint firstItem="Qz4-fz-UE3" firstAttribute="centerY" secondItem="q17-aH-6P6" secondAttribute="centerY" id="7bm-Ai-htt"/>
+                                                <constraint firstItem="Qz4-fz-UE3" firstAttribute="centerX" secondItem="q17-aH-6P6" secondAttribute="centerX" id="7gE-hp-955"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="systemOfTheBodyTitleLabel" destination="lua-NT-6ST" id="NI0-BE-lkN"/>
+                                            <outlet property="stepLabel" destination="Qz4-fz-UE3" id="8Hv-eG-qda"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,8 +71,11 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waT-MM-WER">
-                                <rect key="frame" x="216.5" y="552" width="55" height="30"/>
-                                <state key="normal" title="Confirm"/>
+                                <rect key="frame" x="190" y="531" width="108" height="72"/>
+                                <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald" pointSize="40"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.43145307900000002" green="0.43144452570000003" blue="0.43145030740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="8Uc-fh-x7Z" kind="show" identifier="PrescriptionSegue" id="Vmt-68-0XF"/>
                                 </connections>

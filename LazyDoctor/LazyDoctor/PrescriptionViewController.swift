@@ -39,9 +39,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        emptyAntibioticLabel.isHidden = true
         
-        getAllAntibiotics()
         filterAntibiotics()
         
         if filteredArray.count == 1 {
@@ -49,7 +47,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             antibioticText.text = selectedAntibiotic?.antibioticDescription
             dosageText.text = selectedAntibiotic?.dosagePerKG
         } else if filteredArray.count == 0 {
-            antibioticText.text = "Consult with a Microbiologist"
+            antibioticText.text = "Consult a Microbiologist"
         }
     }
     
@@ -64,7 +62,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         let aciclovir = Antibiotic(name: "Aciclovir", system: "Central Nervous System", typeOfInfection: "Encephalitis", dosagePerKG: "10mg/kg every 8 hours", isForPregnant: "Not Pregnant", penicillinAllergenic: "Not Allergic to Penicillin", antibioticDescription: "Dose should be based on ideal body weight for height and renal function. Advised maximum dose 900mg every 8 hours")
         
         antibiotics = [amoxicillin, ceftriaxone, chloramphenicol, ciprofloxacin, gentamicin, rifampicin, aciclovir]
-        
+    
         return antibiotics
         
     }
@@ -108,6 +106,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     
     func filterAntibiotics() {
+        getAllAntibiotics()
         filteredArray = antibiotics.filter { $0.system == clinicalCondition?.system && $0.typeOfInfection == clinicalCondition?.typeOfInfection }
         filterPregnant()
         filterPenicillin()
