@@ -10,13 +10,6 @@ import Foundation
 class SystemsOfTheBody {
     
     let bodySystems = ["Central Nervous System", "Lower Respiratory Tract", "Urinary Tract", "Gastrointestinal Tract", "Skin and Soft Tissue", "Bone and Joint", "Obstetrics and Gynaecology", "Genital Tract", "Ear, Nose and Throat", "Cardiovascular"].sorted()
-//    
-//    override init() {
-//        super.init()
-//    }
-//    
-//    func ListBodySystem() ->Array<Any>{
-//        return bodySystems
-//    }
+
     
 }
