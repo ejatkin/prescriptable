@@ -13,19 +13,9 @@ class ConfirmationViewController: UIViewController {
     var clinicalCondition: ClinicalCondition? = nil
     
     @IBOutlet weak var systemButton: UIButton!
-    
     @IBOutlet weak var typeOfInfectionButton: UIButton!
-    
-    @IBOutlet weak var severityButton: UIButton!
-    
-    @IBOutlet weak var isChildButton: UIButton!
-    
-    
     @IBOutlet weak var isPregnantButton: UIButton!
-    
-    
     @IBOutlet weak var allergyButton: UIButton!
-    
     @IBOutlet weak var confirmButton: UIButton!
     
     
@@ -47,25 +37,14 @@ class ConfirmationViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showPrescription") {
+        if (segue.identifier == "PrescriptionViewController") {
             let prescriptionViewController = segue.destination as! PrescriptionViewController
             prescriptionViewController.clinicalCondition = clinicalCondition
         }
-        if let systemsViewController = segue.destination as? SystemsOfTheBodyViewController {
+        if let systemsViewController = segue.destination as? MedicalStepViewController {
             systemsViewController.edit = true
             systemsViewController.clinicalCondition = clinicalCondition
-        } else if let typeOfInfectionViewController = segue.destination as? TypeOfInfectionViewController {
-            typeOfInfectionViewController.edit = true
-            typeOfInfectionViewController.clinicalCondition = clinicalCondition
-
-        } else if let pregnantViewController = segue.destination as? PregnantViewController {
-            pregnantViewController.edit = true
-            pregnantViewController.clinicalCondition = clinicalCondition
-
-        } else if let allergyViewController = segue.destination as? AllergyViewController {
-            allergyViewController.edit = true
-            allergyViewController.clinicalCondition = clinicalCondition
-}
+        }
         
     }
 }
