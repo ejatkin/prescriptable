@@ -10,10 +10,16 @@ import UIKit
 
 class ClinicalCondition {
     
-    
+        var conditionArray: [String] = []
+
         var system: String = ""
         var typeOfInfection: String = ""
-        var isChild: String = ""
         var isPregnant: String = ""
         var isPenicillin: String = ""
+    
+    func toArray() -> [String] {
+        conditionArray = [system, typeOfInfection, isPregnant, isPenicillin]
+        return conditionArray
+    }
+    
 }
