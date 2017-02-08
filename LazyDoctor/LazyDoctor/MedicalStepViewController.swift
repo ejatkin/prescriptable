@@ -61,7 +61,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
             step = newStep
             updateStepData()
         } else {
-        performSegue(withIdentifier: "PrescriptionSegue", sender: nil)
+        performSegue(withIdentifier: "ConfirmationSegue", sender: self)
         }
     }
     
@@ -76,11 +76,8 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showTypeOfInfection") {
-            let typeOfInfectionViewController = segue.destination as! TypeOfInfectionViewController
-            typeOfInfectionViewController.clinicalCondition = clinicalCondition
-            
-        }
+            let confirmationViewController = segue.destination as! ConfirmationViewController
+            confirmationViewController.clinicalCondition = clinicalCondition
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
