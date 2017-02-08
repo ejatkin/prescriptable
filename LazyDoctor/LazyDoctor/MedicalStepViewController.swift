@@ -80,6 +80,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         switch step {
         case .System: stepData = SystemsOfTheBody().bodySystems
         case .InfectionType: stepData = TypeOfInfection().CNSArray
+//        tableView(medicalStepTableView, heightForRowAt: IndexPath) 
         case .Pregnant: stepData = Pregnant().pregnantArray
         case .Allergy: stepData = Allergy().allergyArray
         case .Confirmation: stepData = (clinicalCondition?.toArray())!
