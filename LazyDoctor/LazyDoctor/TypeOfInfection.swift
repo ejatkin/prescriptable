@@ -10,7 +10,7 @@ import UIKit
 
 class TypeOfInfection {
     
-    let CNSArray = ["Bacterial Meningitis \n(empirical treatment)", "Encephalitis", "Bacterial Meningitis \n(pathogen identified)", "Meningococcal disease \n(prophylaxis)", "Close contacts of Haemophilus \n influenza type B"]
+    let CNSArray = ["Bacterial Meningitis (empirical treatment)", "Encephalitis", "Bacterial Meningitis (pathogen identified)", "Meningococcal disease (prophylaxis)", "Close contacts of Haemophilus influenza type B"]
     
     let lowerRespiratoryTractArray = ["Community Acquired Pneumonia (CAP)", "Critically ill patients \n with CAP with anticipated ITU admission i.e. \n requiring critical care outreach review", "Hospital Acquired Pneumonia (HAP)", "Aspiration Pneumonia", "Infective exacerbation of COPD or Asthma or LRTI with no evidence of pneumonia", "Empyema", "Acute Chest Syndrome in sickle cell patient"]
     
