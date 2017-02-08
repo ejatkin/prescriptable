@@ -20,6 +20,8 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case Pregnant
         case Allergy
         case Confirmation
+        
+        
     }
     
     var step: Step = .System
@@ -44,7 +46,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SystemOfTheBodyCell") as? SystemOfTheBodyTableViewCell
-        cell?.textLabel?.text = stepData[indexPath.row]
+        cell?.stepLabel?.text = stepData[indexPath.row]
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         return cell!
@@ -78,6 +80,7 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         switch step {
         case .System: stepData = SystemsOfTheBody().bodySystems
         case .InfectionType: stepData = TypeOfInfection().CNSArray
+//        tableView(medicalStepTableView, heightForRowAt: IndexPath) 
         case .Pregnant: stepData = Pregnant().pregnantArray
         case .Allergy: stepData = Allergy().allergyArray
         case .Confirmation: stepData = (clinicalCondition?.toArray())!

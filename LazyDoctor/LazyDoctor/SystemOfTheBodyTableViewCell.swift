@@ -9,8 +9,8 @@
 import UIKit
 
 class SystemOfTheBodyTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var systemOfTheBodyTitleLabel: UILabel!
+    
+    @IBOutlet weak var stepLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
