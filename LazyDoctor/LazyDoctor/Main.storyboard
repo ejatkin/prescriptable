@@ -85,7 +85,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4X4-XW-ybg">
-                                <rect key="frame" x="218" y="135" width="55" height="44.5"/>
+                                <rect key="frame" x="218.5" y="135.5" width="55" height="44.5"/>
                                 <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald" pointSize="30"/>
                                 <color key="textColor" red="0.70980392160000005" green="0.31764705879999999" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -155,6 +155,7 @@
                                                 <constraint firstItem="Whz-bV-eb2" firstAttribute="centerY" secondItem="VgA-d2-l9c" secondAttribute="centerY" id="Ek6-a5-1Q3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="prescriptionLabel" destination="Whz-bV-eb2" id="9cc-tr-Ul8"/>
                                         </connections>
@@ -188,11 +189,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk0-xs-nVR">
-                                <rect key="frame" x="186" y="543" width="122" height="50"/>
-                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="25"/>
-                                <state key="normal" title="Start Again">
+                                <rect key="frame" x="135.5" y="509.5" width="161" height="94"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="55"/>
+                                <state key="normal" title="Restart">
                                     <color key="titleColor" red="0.59607843140000005" green="0.70588235290000001" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startAgainPressed:" destination="8Uc-fh-x7Z" eventType="touchUpInside" id="ITR-Mu-wjG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.019607843140000001" green="0.83529411760000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -203,10 +207,9 @@
                             <constraint firstItem="pSA-Xg-963" firstAttribute="top" secondItem="3nb-YD-Mzj" secondAttribute="bottom" constant="211" id="HKt-XN-EFN"/>
                             <constraint firstItem="Krm-pQ-kuO" firstAttribute="centerX" secondItem="GWT-L8-f62" secondAttribute="centerX" id="XAQ-QL-YRl"/>
                             <constraint firstItem="Krm-pQ-kuO" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" multiplier="1.4" constant="52.600000000000023" id="cEJ-Ih-xyo"/>
-                            <constraint firstItem="dk0-xs-nVR" firstAttribute="leading" secondItem="GWT-L8-f62" secondAttribute="leadingMargin" constant="170" id="m1Y-BM-3lU"/>
+                            <constraint firstItem="dk0-xs-nVR" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" multiplier="1.6" constant="22.899999999999977" id="j0O-Ib-RnV"/>
                             <constraint firstItem="pSA-Xg-963" firstAttribute="leading" secondItem="GWT-L8-f62" secondAttribute="leadingMargin" constant="45" id="mE3-us-bK8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dk0-xs-nVR" secondAttribute="trailing" constant="51" id="pez-sf-ecw"/>
-                            <constraint firstItem="vLr-kh-Prg" firstAttribute="top" secondItem="dk0-xs-nVR" secondAttribute="bottom" constant="74" id="rfm-mJ-M39"/>
+                            <constraint firstItem="dk0-xs-nVR" firstAttribute="centerX" secondItem="GWT-L8-f62" secondAttribute="centerX" multiplier="1.2" constant="-9" id="uTW-9I-152"/>
                             <constraint firstItem="2gc-E4-Pe8" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" constant="78.5" id="xP0-51-z6U"/>
                         </constraints>
                     </view>
@@ -215,7 +218,6 @@
                         <outlet property="dosageText" destination="Krm-pQ-kuO" id="t6u-OC-eYh"/>
                         <outlet property="startAgainButton" destination="dk0-xs-nVR" id="Gq3-Ku-y5L"/>
                         <outlet property="tableView" destination="pSA-Xg-963" id="J53-WN-zhu"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="startOverSegue" id="SEw-2f-Ajt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7D-sE-ohq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,7 +246,4 @@
     <resources>
         <image name="BottleWithLabel" width="1563" height="2779"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="SEw-2f-Ajt"/>
-    </inferredMetricsTieBreakers>
 </document>
