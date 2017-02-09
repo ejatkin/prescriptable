@@ -36,10 +36,5 @@ class ConfirmationViewController: UIViewController {
         confirmButton.setTitle("Confirm", for: .normal)
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let prescriptionViewController = segue.destination as! PrescriptionViewController
-            prescriptionViewController.clinicalCondition = clinicalCondition
-        
-    }
 }
 

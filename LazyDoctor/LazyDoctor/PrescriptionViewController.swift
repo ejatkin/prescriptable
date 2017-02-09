@@ -127,6 +127,10 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         medicalStepViewController.clinicalCondition = nil
         
     }
+    
+    @IBAction func startAgainPressed(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
 
     }
 

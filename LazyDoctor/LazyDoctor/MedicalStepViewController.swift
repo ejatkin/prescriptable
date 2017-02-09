@@ -34,6 +34,9 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         confirmButton.isHidden = true
         clinicalCondition = ClinicalCondition()
         step = .System
