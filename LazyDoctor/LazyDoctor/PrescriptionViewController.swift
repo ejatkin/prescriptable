@@ -15,6 +15,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var commentsTextView: UITextView!
     @IBOutlet weak var emptyAntibioticLabel: UILabel!
     @IBOutlet weak var dosageText: UITextView!
+    @IBOutlet weak var startAgainButton: UIButton!
     
     @IBOutlet weak var antibioticText: UITextView!
     var clinicalCondition: ClinicalCondition?
@@ -118,6 +119,13 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         if (clinicalCondition?.isPenicillin == "Allergic to Penicillin") {
             filteredArray = filteredArray.filter { $0.penicillinAllergenic == clinicalCondition?.isPenicillin  }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let medicalStepViewController = segue.destination as!
+            MedicalStepViewController
+        medicalStepViewController.clinicalCondition = nil
+        
     }
 
     }

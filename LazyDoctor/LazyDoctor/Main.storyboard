@@ -130,28 +130,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-E4-Pe8">
-                                <rect key="frame" x="60" y="350" width="240" height="124"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="124" id="QOl-QP-GmJ"/>
-                                    <constraint firstAttribute="width" constant="240" id="hYr-Ts-Fg4"/>
-                                </constraints>
-                                <color key="textColor" red="0.43145307900000002" green="0.43144452570000003" blue="0.43145030740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-pQ-kuO">
-                                <rect key="frame" x="68" y="482" width="240" height="75"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="CyL-9P-IAP"/>
-                                    <constraint firstAttribute="width" constant="240" id="vRG-Ip-JJ7"/>
-                                </constraints>
-                                <color key="textColor" red="0.43145307900000002" green="0.43144452570000003" blue="0.43145030740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pSA-Xg-963">
                                 <rect key="frame" x="61" y="231" width="252" height="134"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -186,6 +164,35 @@
                                     <outlet property="delegate" destination="8Uc-fh-x7Z" id="rSK-ds-y3d"/>
                                 </connections>
                             </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-E4-Pe8">
+                                <rect key="frame" x="60" y="350" width="240" height="124"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="QOl-QP-GmJ"/>
+                                    <constraint firstAttribute="width" constant="240" id="hYr-Ts-Fg4"/>
+                                </constraints>
+                                <color key="textColor" red="0.43145307900000002" green="0.43144452570000003" blue="0.43145030740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-pQ-kuO">
+                                <rect key="frame" x="68" y="482" width="240" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="CyL-9P-IAP"/>
+                                    <constraint firstAttribute="width" constant="240" id="vRG-Ip-JJ7"/>
+                                </constraints>
+                                <color key="textColor" red="0.43145307900000002" green="0.43144452570000003" blue="0.43145030740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk0-xs-nVR">
+                                <rect key="frame" x="186" y="543" width="122" height="50"/>
+                                <fontDescription key="fontDescription" name="Oswald-Regular" family="Oswald" pointSize="25"/>
+                                <state key="normal" title="Start Again">
+                                    <color key="titleColor" red="0.59607843140000005" green="0.70588235290000001" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.019607843140000001" green="0.83529411760000005" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -195,14 +202,19 @@
                             <constraint firstItem="pSA-Xg-963" firstAttribute="top" secondItem="3nb-YD-Mzj" secondAttribute="bottom" constant="211" id="HKt-XN-EFN"/>
                             <constraint firstItem="Krm-pQ-kuO" firstAttribute="centerX" secondItem="GWT-L8-f62" secondAttribute="centerX" id="XAQ-QL-YRl"/>
                             <constraint firstItem="Krm-pQ-kuO" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" multiplier="1.4" constant="52.600000000000023" id="cEJ-Ih-xyo"/>
+                            <constraint firstItem="dk0-xs-nVR" firstAttribute="leading" secondItem="GWT-L8-f62" secondAttribute="leadingMargin" constant="170" id="m1Y-BM-3lU"/>
                             <constraint firstItem="pSA-Xg-963" firstAttribute="leading" secondItem="GWT-L8-f62" secondAttribute="leadingMargin" constant="45" id="mE3-us-bK8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dk0-xs-nVR" secondAttribute="trailing" constant="51" id="pez-sf-ecw"/>
+                            <constraint firstItem="vLr-kh-Prg" firstAttribute="top" secondItem="dk0-xs-nVR" secondAttribute="bottom" constant="74" id="rfm-mJ-M39"/>
                             <constraint firstItem="2gc-E4-Pe8" firstAttribute="centerY" secondItem="GWT-L8-f62" secondAttribute="centerY" constant="78.5" id="xP0-51-z6U"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="antibioticText" destination="2gc-E4-Pe8" id="4fX-zq-cQe"/>
                         <outlet property="dosageText" destination="Krm-pQ-kuO" id="t6u-OC-eYh"/>
+                        <outlet property="startAgainButton" destination="dk0-xs-nVR" id="Gq3-Ku-y5L"/>
                         <outlet property="tableView" destination="pSA-Xg-963" id="J53-WN-zhu"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="startOverSegue" id="SEw-2f-Ajt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7D-sE-ohq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -231,4 +243,7 @@
     <resources>
         <image name="BottleWithLabel" width="1563" height="2779"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SEw-2f-Ajt"/>
+    </inferredMetricsTieBreakers>
 </document>

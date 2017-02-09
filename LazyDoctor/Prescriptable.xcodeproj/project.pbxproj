@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		370F6D9E1E44E16100BA4E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370F6D9D1E44E16100BA4E16 /* Assets.xcassets */; };
 		370F6DA01E44E35A00BA4E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370F6D9F1E44E35A00BA4E16 /* Main.storyboard */; };
 		371C9A761E4A42A9008322B0 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 371C9A731E4A42A9008322B0 /* Oswald-Bold.ttf */; };
 		371C9A771E4A42A9008322B0 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 371C9A741E4A42A9008322B0 /* Oswald-Light.ttf */; };
 		371C9A781E4A42A9008322B0 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 371C9A751E4A42A9008322B0 /* Oswald-Regular.ttf */; };
 		37B067401E40DF2F0056BE6B /* SystemsOfTheBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */; };
 		37B067421E40DF490056BE6B /* SystemsOfTheBodyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */; };
+		37C7E1491E4C7CB4004ED07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C7E1481E4C7CB4004ED07C /* Assets.xcassets */; };
 		37CAE6D11E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */; };
 		37CAE6D31E42327800DA4E33 /* TypeOfInfection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */; };
 		51CE379A1E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */; };
@@ -55,13 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		370F6D9D1E44E16100BA4E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		370F6D9F1E44E35A00BA4E16 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		371C9A731E4A42A9008322B0 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
 		371C9A741E4A42A9008322B0 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
 		371C9A751E4A42A9008322B0 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		37B0673F1E40DF2F0056BE6B /* SystemsOfTheBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBody.swift; sourceTree = "<group>"; };
 		37B067411E40DF490056BE6B /* SystemsOfTheBodyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemsOfTheBodyTest.swift; sourceTree = "<group>"; };
+		37C7E1481E4C7CB4004ED07C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CAE6D01E42312700DA4E33 /* TypeOfInfectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfectionTableViewCell.swift; sourceTree = "<group>"; };
 		37CAE6D21E42327800DA4E33 /* TypeOfInfection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfInfection.swift; sourceTree = "<group>"; };
 		51CE37991E40EBE900EA9902 /* SystemOfTheBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemOfTheBodyTableViewCell.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 				51DCA6F31E433BC400463EF9 /* ViewControllers */,
 				5F96686F1E40CBB100CD66CA /* LaunchScreen.storyboard */,
 				370F6D9F1E44E35A00BA4E16 /* Main.storyboard */,
-				370F6D9D1E44E16100BA4E16 /* Assets.xcassets */,
+				37C7E1481E4C7CB4004ED07C /* Assets.xcassets */,
 				5F9668721E40CBB100CD66CA /* Info.plist */,
 				51CE37981E40EB6F00EA9902 /* Models */,
 			);
@@ -332,7 +332,7 @@
 				371C9A781E4A42A9008322B0 /* Oswald-Regular.ttf in Resources */,
 				371C9A771E4A42A9008322B0 /* Oswald-Light.ttf in Resources */,
 				5F9668711E40CBB100CD66CA /* LaunchScreen.storyboard in Resources */,
-				370F6D9E1E44E16100BA4E16 /* Assets.xcassets in Resources */,
+				37C7E1491E4C7CB4004ED07C /* Assets.xcassets in Resources */,
 				371C9A761E4A42A9008322B0 /* Oswald-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
