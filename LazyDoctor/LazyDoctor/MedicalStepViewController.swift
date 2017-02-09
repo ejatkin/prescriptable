@@ -21,32 +21,23 @@ class MedicalStepViewController: UIViewController, UITableViewDataSource, UITabl
         case Pregnant
         case Allergy
         case Confirmation
-        
-        
     }
     
     var step: Step = .System
     var stepData: [String] = []
     
-    
     var clinicalCondition: ClinicalCondition? = nil
     var edit: Bool = false
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         confirmButton.isHidden = true
         clinicalCondition = ClinicalCondition()
         step = .System
         updateStepData()
+      
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SystemOfTheBodyCell") as? SystemOfTheBodyTableViewCell
